@@ -1,0 +1,84 @@
+# compress text, html, javascript, css, xml:
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+
+AddType text/x-component .htc
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType text/html "access plus 1 seconds"
+ExpiresByType image/gif "access plus 1 years"
+ExpiresByType image/jpeg "access plus 1 years"
+ExpiresByType image/png "access plus 1 years"
+ExpiresByType image/x-icon "access plus 1 years"
+ExpiresByType text/css "access plus 1 years"
+ExpiresByType text/javascript "access plus 1 years"
+ExpiresByType application/x-javascript "access plus 1 years"
+ExpiresByType application/x-shockwave-flash "access plus 1 years"
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    RewriteRule ^img/affiliate/(.*)$ http://i-allmenus.com/static/affiliates/$1 [L,R]
+    
+    RewriteBase /
+
+    #Removes access to the system folder by users.
+    #Additionally this will allow you to create a System.php controller,
+    #previously this would not have been possible.
+    #'system' can be replaced if you have renamed your system folder.
+    RewriteCond %{REQUEST_URI} ^system.*
+    RewriteRule ^(.*)$ /index.php?/$1 [L]
+    
+    #When your application folder isn't in the system folder
+    #This snippet prevents user access to the application folder
+    #Submitted by: Fabdrol
+    #Rename 'application' to your applications folder name.
+    RewriteCond %{REQUEST_URI} ^application.*
+    RewriteRule ^(.*)$ /index.php?/$1 [L]
+
+#    #Checks to see if the user is attempting to access a valid file,
+#    #such as an image or css document, if this isn't true it sends the
+#    #request to index.php
+#    #services
+#    RewriteCond %{REQUEST_FILENAME} !-f
+#    RewriteCond %{REQUEST_FILENAME} !-d
+#    RewriteCond %{HTTP_HOST} ^v6-services.allmenus.com$
+#    RewriteRule ^(.*)$ services-index.php?/$1 [L]
+
+    #Checks to see if the user is attempting to access a valid file,
+    #such as an image or css document, if this isn't true it sends the
+    #request to index.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(order|account|checkout|menucenter)(.*)$ allmenus-index.php [QSA,L]
+    
+    #menu url
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^([a-z]*)/(.*)/([0-9]*)-(.*)/menu/$ allmenus-index.php [QSA,L]
+
+    #legacy code
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+
+
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+    # If we don't have mod_rewrite installed, all 404's
+    # can be sent to index.php, and everything works as normal.
+    # Submitted by: ElliotHaughin
+
+    ErrorDocument 404 /index.php
+</IfModule> 
