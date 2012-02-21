@@ -26,8 +26,6 @@ ExpiresByType application/x-shockwave-flash "access plus 1 years"
 
 <IfModule mod_rewrite.c>
     RewriteEngine On
-
-    RewriteRule ^img/affiliate/(.*)$ http://i-allmenus.com/static/affiliates/$1 [L,R]
     
     RewriteBase /
 
@@ -45,33 +43,21 @@ ExpiresByType application/x-shockwave-flash "access plus 1 years"
     RewriteCond %{REQUEST_URI} ^application.*
     RewriteRule ^(.*)$ /index.php?/$1 [L]
 
-#    #Checks to see if the user is attempting to access a valid file,
-#    #such as an image or css document, if this isn't true it sends the
-#    #request to index.php
-#    #services
-#    RewriteCond %{REQUEST_FILENAME} !-f
-#    RewriteCond %{REQUEST_FILENAME} !-d
-#    RewriteCond %{HTTP_HOST} ^v6-services.allmenus.com$
-#    RewriteRule ^(.*)$ services-index.php?/$1 [L]
+	#Checks to see if the user is attempting to access a valid file,
+	#such as an image or css document, if this isn't true it sends the
+	#request to index.php
+	#services
+	#RewriteCond %{REQUEST_FILENAME} !-f
+	#RewriteCond %{REQUEST_FILENAME} !-d
+	#RewriteCond %{HTTP_HOST} ^my-services.mydomain.com$
+	#RewriteRule ^(.*)$ services-index.php?/$1 [L]
 
     #Checks to see if the user is attempting to access a valid file,
     #such as an image or css document, if this isn't true it sends the
     #request to index.php
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(order|account|checkout|menucenter)(.*)$ allmenus-index.php [QSA,L]
-    
-    #menu url
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^([a-z]*)/(.*)/([0-9]*)-(.*)/menu/$ allmenus-index.php [QSA,L]
-
-    #legacy code
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
-
-
+    RewriteRule ^(home|dwoo_test|account|recaptchademo)(.*)$ index.php [QSA,L]
 
 </IfModule>
 
