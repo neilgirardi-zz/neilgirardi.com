@@ -63,14 +63,14 @@
 		-webkit-box-shadow: 0 0 8px #D0D0D0;
 	}
 	</style>
-	<link type="text/css" rel="stylesheet" href="<?php echo cdn(); ?>css/style.css" />
+	<link type="text/css" rel="stylesheet" href="<?php echo CDN; ?>css/style.css" />
 </head>
 <body>
 
 <div id="container">
 	<h1>Welcome to CodeIgniter!</h1>
-	<h1>BASE URL: <?= $this->config->item('base_url'); ?></h1>
-	<h1>CDN PATH: <?=cdn(); ?></h1>
+	<h1>BASE URL: <?php echo $this->config->item('base_url'); ?></h1>
+	<h1>CDN PATH: <?php echo CDN; ?></h1>
 	
 	<h1 class="test">If this heading appears red the external CSS is properly linked</h1>
 

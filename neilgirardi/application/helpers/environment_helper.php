@@ -7,7 +7,8 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
         function cdn()
         {
             $CI =& get_instance();
-            if (ENVIRONMENT == 'production') {
+            if (ENVIRONMENT == 'production') 
+            {
                 return $CI->config->item('prod_cdn');
             } else {
                 return $CI->config->item('dev_cdn');

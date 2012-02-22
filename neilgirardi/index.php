@@ -120,10 +120,8 @@ if (defined('ENVIRONMENT'))
  * Un-comment the $assign_to_config array below to use this feature
  *
  */
-$assign_to_config['dev_cdn'] = '/cdn/';
-$assign_to_config['prod_cdn'] = 'http://path/to/my/cdn/';
-$assign_to_config['dev_base_url'] = 'http://localhost.neilgirardi';
-$assign_to_config['prod_base_url'] = 'http://neilgirardi.com';
+//$assign_to_config['my_var'] = 'some value';
+
 
 
 // --------------------------------------------------------------------
