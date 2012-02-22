@@ -216,7 +216,11 @@ td { vertical-align: top; }
 	margin: 0 auto;
 }
 
-#siteContainer div:first-child {
+.row {
+	clear: both;
+}
+
+.row div:first-child {
 	float: left;
 }
 
@@ -226,6 +230,10 @@ td { vertical-align: top; }
 
 .clear {
 	clear: both;
+}
+
+.test {
+    color: #ff3333;
 }
 
 
