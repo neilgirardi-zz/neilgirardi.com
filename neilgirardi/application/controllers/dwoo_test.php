@@ -2,19 +2,18 @@
 
 class Dwoo_test extends CI_Controller {
     
-     function __construct() {
-
+     function __construct() 
+     {
             parent::__construct();
             $this->load->helper(array('url', 'form', 'array', 'cookie'));
             $this->load->library('parser');
-        
         }
 
-    function index() {
-    	
+    function index() 
+    {	
     	$this->parser->parse('test', array('message' => 'OH HAI!'));
-    	
 	}
+    
 }
 
 ?>

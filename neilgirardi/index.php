@@ -120,7 +120,7 @@ if (defined('ENVIRONMENT'))
  * Un-comment the $assign_to_config array below to use this feature
  *
  */
-//$assign_to_config['my_var'] = 'some value';
+$assign_to_config['cdn'] = CDN;
 
 
 

@@ -211,9 +211,113 @@ td { vertical-align: top; }
    Author: Neil Girardi
    ========================================================================== */
 
-#siteContainer {
+/* =============================================================================
+   IDs
+   ========================================================================== */
+
+#gridContainer {
 	width: 960px;
 	margin: 0 auto;
+	background: url("/cdn/images/grid_960_col_16.jpg") no-repeat;
+	height:1000px;
+}
+
+#header {
+    height: 130px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #9f868b;
+}
+
+#main {
+  
+}
+
+#masthead, #footer {
+    margin: 0 auto;
+}
+
+#masthead h1 {
+    line-height: 90px;
+}
+
+#nav {
+    height: 40px;
+    margin: 90px auto 0;
+    position: relative;
+    z-index: 10;
+}
+
+#nav ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+#nav ul li a {
+    line-height: 40px;
+    font-size:16px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #222;
+}
+
+#searchBox {
+    line-height: 40px;
+}
+
+body {
+    background: #518e9d;
+}
+
+/* =============================================================================
+   Classses
+   ========================================================================== */
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12,
+.grid_13,
+.grid_14,
+.grid_15,
+.grid_16 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.grid_1 {width: 40px;}
+.grid_2 {width: 100px;}
+.grid_3 {width: 160px;}
+.grid_4 {width: 220px;}
+.grid_5 {width: 280px;}
+.grid_6 {width: 340px;}
+.grid_7 {width: 400px;}
+.grid_8 {width: 460px;}
+.grid_9 {width: 520px;}
+.grid_10 {width: 580px;}
+.grid_11 {width: 640px;}
+.grid_12 {width: 700px;}
+.grid_13 {width: 760px;}
+.grid_14 {width: 820px;}
+.grid_15 {width: 880px;}
+.grid_16 {width: 940px;}
+
+.pull_left {
+    float: left;
+}
+
+.pull_right {
+    float: right;
 }
 
 .row {
@@ -235,21 +339,6 @@ td { vertical-align: top; }
 .test {
     color: #ff3333;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
