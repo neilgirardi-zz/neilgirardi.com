@@ -217,7 +217,6 @@ td { vertical-align: top; }
 
 #siteContainer {
 	width: 960px;
-	background: url("./../images/960_gs_12_columns.jpg") no-repeat;
 	min-height: 800px;
 }
 
@@ -228,11 +227,14 @@ td { vertical-align: top; }
     top: 0;
     left: 0;
     background: url('./../images/headerbg.png') repeat-x;
-    color: #ffcf79;
 }
 
 #masthead h1 {
     line-height: 90px;
+}
+
+#masthead a {
+    color: #ffcf79;
 }
 
 #nav {
@@ -250,7 +252,6 @@ td { vertical-align: top; }
 #nav ul li a {
     line-height: 40px;
     font-size:18px;
-    text-decoration: none;
     font-weight: bold;
     color:#ffcf79;
 }
@@ -267,6 +268,10 @@ td { vertical-align: top; }
 /* =============================================================================
    Classses
    ========================================================================== */
+
+.dev_grid {
+    background: url("./../images/960_gs_12_columns.jpg") no-repeat;
+}
 
 .grid_1 {width: 60px;}
 .grid_2 {width: 140px;}
@@ -313,7 +318,7 @@ td { vertical-align: top; }
     float: left;
 }
 
-.grid_row > div  {
+.grid_row > *  {
 	float: left;
 	margin-left: 10px;
 	margin-right: 10px;
@@ -329,6 +334,18 @@ td { vertical-align: top; }
 
 .test {
     color: #ff3333;
+}
+
+h1+p, p+h1 {
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+p a {
+    text-decoration: underline;
 }
 
 
