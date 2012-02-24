@@ -1,4 +1,7 @@
- <div id="gridContainer">
-     <div id="main" role="main">
-     </div> <!-- end of #main -->
+ <div id="siteContainer" class="centered">
+     <div class="grid_row">
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div> 
+     </div>   
  </div> <!-- end of #gridContainer -->

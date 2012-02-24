@@ -1,4 +1,4 @@
-<div id="nav" class="grid_16">
+<div id="nav" class="grid_12">
     <nav>
         <ul>
             <li><a href="portfolio">Portfolio</a></li>
@@ -9,7 +9,7 @@
     </nav>
     
     <div id="searchBox" class="pull_right">
-        <input id="searchInput" class="rounded" type="text" /> 
+        <input id="searchInput" class="grid_3 rounded" type="text" /> 
     </div>
     
 </div>
