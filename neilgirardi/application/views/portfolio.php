@@ -1,5 +1,5 @@
  <div id="siteContainer" class="centered">
-     <div class="grid_row">
+     <div id="portfolio_sliders" class="grid_row">
          <div class="box"></div>
          <div class="box"></div>
          <div class="box"></div> 

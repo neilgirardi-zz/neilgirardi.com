@@ -218,7 +218,7 @@ td { vertical-align: top; }
 #siteContainer {
 	width: 960px;
 	background: url("./../images/960_gs_12_columns.jpg") no-repeat;
-	height: 1000px;
+	min-height: 800px;
 }
 
 #header {
@@ -257,6 +257,10 @@ td { vertical-align: top; }
 
 #searchBox {
     line-height: 40px;
+}
+
+#portfolio_sliders {
+    margin-top: 20px;
 }
 
 
@@ -303,6 +307,10 @@ td { vertical-align: top; }
     background: #fbfbfb;
     border: 1px solid #000;
     
+}
+
+.grid_row {
+    float: left;
 }
 
 .grid_row > div  {
