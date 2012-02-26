@@ -211,64 +211,25 @@ td { vertical-align: top; }
    Author: Neil Girardi
    ========================================================================== */
 
-/* =============================================================================
-   IDs
-   ========================================================================== */
+/* ======================================
+   Universal IDs
+   ====================================== */
 
+/* Main wrapper */
 #siteContainer {
 	width: 960px;
 	min-height: 800px;
 }
 
-#header {
-    height: 150px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: url('./../images/headerbg.png') repeat-x;
-}
-
-#masthead h1 {
-    line-height: 90px;
-}
-
-#masthead a {
-    color: #ffcf79;
-}
-
-#nav {
-    height: 40px;
-    margin: 110px auto 0;
-    position: relative;
-    z-index: 10;
-}
-
-#nav ul li {
-    float: left;
-    margin-right: 20px;
-}
-
-#nav ul li a {
-    line-height: 40px;
-    font-size:18px;
-    font-weight: bold;
-    color:#ffcf79;
-}
-
-#searchBox {
-    line-height: 40px;
-}
-
-#portfolio_sliders {
-    margin-top: 20px;
-}
 
 
-/* =============================================================================
-   Classses
-   ========================================================================== */
-
+/* ======================================
+   Universal Classses
+   ===================================== */
+  
+/* Provides a grid chart background for dev purposes.
+ * Clicking the back tick key toggles this on and off.
+ */
 .dev_grid {
     background: url("./../images/960_gs_12_columns.jpg") no-repeat;
 }
@@ -287,38 +248,59 @@ td { vertical-align: top; }
 .grid_11 {width: 860px;}
 .grid_12 {width: 940px;}
 
-/* Standard grid width columns with 1px borders on left AND right */
-.grid_1.borders {width: 58px;}
-.grid_2.borders {width: 138px;}
-.grid_3.borders {width: 218px;}
-.grid_4.borders{width: 298px;}
-.grid_5.borders{width: 378px;}
-.grid_6.borders {width: 458px;}
-.grid_7.borders {width: 538px;}
-.grid_8.borders {width: 618px;}
-.grid_9.borders {width: 698px;}
-.grid_10.borders {width: 778px;}
-.grid_11.borders {width: 858px;}
-.grid_12.borders {width: 938px;}
+/* Standard grid width columns with 1px borders */
+.grid_1.borders_thin {width: 58px;}
+.grid_2.borders_thin {width: 138px;}
+.grid_3.borders_thin {width: 218px;}
+.grid_4.borders_thin {width: 298px;}
+.grid_5.borders_thin {width: 378px;}
+.grid_6.borders_thin {width: 458px;}
+.grid_7.borders_thin {width: 538px;}
+.grid_8.borders_thin {width: 618px;}
+.grid_9.borders_thin {width: 698px;}
+.grid_10.borders_thin {width: 778px;}
+.grid_11.borders_thin {width: 858px;}
+.grid_12.borders_thin {width: 938px;}
 
-/* Standard grid width columns with 1px border on left OR right */
-.grid_1.border {width: 59px;}
-.grid_2.border {width: 139px;}
-.grid_3.border {width: 219px;}
-.grid_4.border{width: 299px;}
-.grid_5.border{width: 379px;}
-.grid_6.border {width: 459px;}
-.grid_7.border {width: 539px;}
-.grid_8.border {width: 619px;}
-.grid_9.border {width: 699px;}
-.grid_10.border {width: 779px;}
-.grid_11.border {width: 859px;}
-.grid_12.border {width: 939px;}
+/* Standard grid width columns with 2px borders */
+.grid_1.borders_medium {width: 56px;}
+.grid_2.borders_medium {width: 136px;}
+.grid_3.borders_medium {width: 216px;}
+.grid_4.borders_medium {width: 296px;}
+.grid_5.borders_medium {width: 376px;}
+.grid_6.borders_medium {width: 456px;}
+.grid_7.borders_medium {width: 536px;}
+.grid_8.borders_medium {width: 616px;}
+.grid_9.borders_medium {width: 696px;}
+.grid_10.borders_medium {width: 776px;}
+.grid_11.borders_medium {width: 856px;}
+.grid_12.borders_medium {width: 936px;}
 
+/* Standard grid width columns with 4px borders */
+.grid_1.borders_thick {width: 52px;}
+.grid_2.borders_thick {width: 132px;}
+.grid_3.borders_thick {width: 212px;}
+.grid_4.borders_thick {width: 292px;}
+.grid_5.borders_thick {width: 372px;}
+.grid_6.borders_thick {width: 452px;}
+.grid_7.borders_thick {width: 532px;}
+.grid_8.borders_thick {width: 612px;}
+.grid_9.borders_thick {width: 692px;}
+.grid_10.borders_thick {width: 772px;}
+.grid_11.borders_thick {width: 852px;}
+.grid_12.borders_thick {width: 932px;}
+
+
+/* Use .grid_row as a parent container for floated children.
+ * Combine .grid_row with grid width classes to build your grid.
+ */
 .grid_row {
     float: left;
 }
 
+/* Commonly used block level elements will automatically be floated
+ * left with 10px margins when placed inside a .grid_row.
+ */
 .grid_row > div,
 .grid_row > p,
 .grid_row > h1,
@@ -333,27 +315,38 @@ td { vertical-align: top; }
     margin-right: 10px;
 }
 
+/* Use this to put a left float on element's whose parent is not a .grid_row */
 .pull_left {
     float: left;
 }
 
+/* Use this to float an element right */
 .pull_right {
     float: right;
 }
 
+/* Use this to clear a float. Don't make an empty div just to clear a float.
+ * Add this class to the first element that should move down to another 
+ * line indtead of floating
+ */
 .clear {
     clear: both;
 }
 
+/* Put this on a parent container which has lost it's height due to two or more
+ * floated children
+ */
 .overflow {
     overflow: auto;
 }
 
+/* Use this to center non-floated items */
 .centered {
     margin-left: auto;
     margin-right: auto;
 }
 
+/* Use this to add subtle rounded corners to an element */
 .rounded {
     border-radius: 4px;
     -moz-border-radius: 4px;
@@ -361,20 +354,12 @@ td { vertical-align: top; }
     border-width: 0;
 }
 
-.box {
-    height: 300px;
-    background: #fbfbfb;
-    border: 1px solid #000;
-    
-}
 
-.test {
-    color: #ff3333;
-}
-
-/* =============================================================================
-   TAGs
-   ========================================================================== */
+/* ======================================
+   Universal Tags
+   ===================================== */
+  
+/* Links should only be underlined if they are part of a paragraph or the footer */  
 a {
     text-decoration: none;
 }
@@ -385,6 +370,8 @@ footer a {
     text-decoration: underline;
 }
 
+
+/* Paragraphs that follow headings should not have a top margin */
 h1+p, 
 p+h1,
 h2+p,
@@ -399,6 +386,123 @@ p+h5 {
 }
 
 
+/* ==|=== Design Specific Styles ========================================================================
+   Use this section to define non-universal styles that are specific to your site's design
+   ========================================================================== */
+
+
+/* ======================================
+  Design Specific IDs
+ ======================================*/
+
+
+/* Header is plased last in the HTML for SEO purposes
+ * but absolutely positioned to appear at the top of the page 
+ */
+#header {
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('./../images/headerbg.png') repeat-x;
+    background: #000000; /* Old browsers */
+    background: -moz-linear-gradient(top,  #000000 0%, #010100 7%, #222222 94%, #333333 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(7%,#010100), color-stop(94%,#222222), color-stop(100%,#333333)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #000000 0%,#010100 7%,#222222 94%,#333333 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #000000 0%,#010100 7%,#222222 94%,#333333 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #000000 0%,#010100 7%,#222222 94%,#333333 100%); /* IE10+ */
+    background: linear-gradient(top,  #000000 0%,#010100 7%,#222222 94%,#333333 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#333333',GradientType=0 ); /* IE6-9 */
+
+
+}
+
+#masthead h1 {
+    line-height: 90px;
+}
+
+#masthead a {
+    color: #ffcf79;
+    color: #4aed05;
+}
+
+/* Nav is a separate view file from header it's injected 
+ * into the HTML after the header but appears within header
+ */
+#nav {
+    height: 40px;
+    margin: 110px auto 0;
+    position: relative;
+    z-index: 10;
+}
+
+#nav ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+#nav ul li a {
+    line-height: 40px;
+    font-size:18px;
+    font-weight: bold;
+    color:#ffcf79;
+    color: #4aed05;
+}
+
+#searchBox {
+    line-height: 40px;
+}
+
+#portfolio_sliders {
+    margin-top: 20px;
+}
+
+#siteContainer h1 {
+    font-size: 20px;
+}
+
+
+
+/* ======================================
+  Design Specific Classes
+ ======================================*/
+
+.arimo {
+    font-family: Arimo;
+}
+
+.michroma {
+    font-family: Michroma;
+}
+
+.play {
+    font-family: Play;
+}
+
+.ubuntu {
+    font-family: Ubuntu;
+}
+
+.box {
+    height: 300px;
+    background: #fbfbfb;
+    border: 1px solid #000;
+    
+}
+
+.test {
+    color: #ff3333;
+}
+
+
+/* ======================================
+  Design Specific Tags
+ ======================================*/
+
+p {
+    color: #333;
+}
 
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.

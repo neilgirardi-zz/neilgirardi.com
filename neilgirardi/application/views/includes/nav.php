@@ -1,6 +1,6 @@
 <div id="nav" class="grid_12">
     <nav>
-        <ul>
+        <ul class="play">
             <li><a href="portfolio">Portfolio</a></li>
             <li><a href="resume">Resume</a></li>
             <li><a href="bio">Bio</a></li>
