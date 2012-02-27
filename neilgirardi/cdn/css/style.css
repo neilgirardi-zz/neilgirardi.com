@@ -291,32 +291,32 @@ td { vertical-align: top; }
 .grid_12.borders_thick {width: 932px;}
 
 
-/* Use .grid_row as a parent container for floated children.
- * Combine .grid_row with grid width classes to build your grid.
+/* Use .row as a parent container for floated children.
+ * Combine .row with grid width classes to build your grid.
  */
-.grid_row {
+.row , .column{
     float: left;
 }
 
 /* Commonly used block level elements will automatically be floated
- * left with 10px margins when placed inside a .grid_row.
+ * left with 10px margins when placed inside a .row.
  */
-.grid_row > div,
-.grid_row > p,
-.grid_row > h1,
-.grid_row > h2,
-.grid_row > h3,
-.grid_row > h4,
-.grid_row > h5,
-.grid_row > ul,
-.grid_row > img  {
+.row > div,
+.row > p,
+.row > h1,
+.row > h2,
+.row > h3,
+.row > h4,
+.row > h5,
+.row > ul,
+.row > img  {
     float: left;
     display: inline; /* fixes double float margin bug in IE6 */
     margin-left: 10px;
     margin-right: 10px;
 }
 
-/* Use this to put a left float on element's whose parent is not a .grid_row */
+/* Use this to put a left float on element's whose parent is not a .row */
 .pull_left {
     float: left;
 }
