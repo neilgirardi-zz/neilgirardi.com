@@ -311,6 +311,7 @@ td { vertical-align: top; }
 .grid_row > ul,
 .grid_row > img  {
     float: left;
+    display: inline; /* fixes double float margin bug in IE6 */
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -414,8 +415,6 @@ p+h5 {
     background: -ms-linear-gradient(top,  #000000 0%,#010100 7%,#222222 94%,#333333 100%); /* IE10+ */
     background: linear-gradient(top,  #000000 0%,#010100 7%,#222222 94%,#333333 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#333333',GradientType=0 ); /* IE6-9 */
-
-
 }
 
 #masthead h1 {
