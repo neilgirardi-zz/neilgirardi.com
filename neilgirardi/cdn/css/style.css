@@ -219,6 +219,7 @@ td { vertical-align: top; }
 #siteContainer {
 	width: 960px;
 	min-height: 800px;
+	margin-top: 5px;
 }
 
 
@@ -298,20 +299,50 @@ td { vertical-align: top; }
     float: left;
 }
 
-/* Commonly used block level elements will automatically be floated
- * left with 10px margins when placed inside a .row.
- */
-.row > div,
-.row > p,
-.row > h1,
-.row > h2,
-.row > h3,
-.row > h4,
-.row > h5,
-.row > ul,
-.row > img  {
+.row > .grid_1,
+.row > .grid_2,
+.row > .grid_3,
+.row > .grid_4,
+.row > .grid_5,
+.row > .grid_6,
+.row > .grid_7,
+.row > .grid_8,
+.row > .grid_9,
+.row > .grid_10,
+.row > .grid_11,
+.row > .grid_12,
+.row > p
+ {
     float: left;
     display: inline; /* fixes double float margin bug in IE6 */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.row h1, .row h2, .row h3, .row h4, .row h5 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.column  > .grid_1,
+.column  > .grid_2,
+.column  > .grid_3,
+.column  > .grid_4,
+.column  > .grid_5,
+.column  > .grid_6,
+.column  > .grid_7,
+.column  > .grid_8,
+.column  > .grid_9,
+.column  > .grid_10,
+.column  > .grid_11,
+.column  > .grid_12,
+.column > h1,
+.column > h2,
+.column > h3,
+.column > h4,
+.column > h5,
+.column > p
+ {
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -371,18 +402,30 @@ footer a {
     text-decoration: underline;
 }
 
-
 /* Paragraphs that follow headings should not have a top margin */
-h1+p, 
-p+h1,
-h2+p,
-p+h2,
-h3+p,
-p+h3,
-h4+p,
-p+h4,
-h5+p,
-p+h5 {
+.column h1+p, 
+.column p+h1,
+.column h2+p,
+.column p+h2,
+.column h3+p,
+.column p+h3,
+.column h4+p,
+.column p+h4,
+.column h5+p,
+.column p+h5 {
+    margin-top: 0;
+}
+
+.row h1~p, 
+.row p~h1,
+.row h2~p,
+.row p~h2,
+.row h3~p,
+.row p~h3,
+.row h4~p,
+.row p~h4,
+.row h5~p,
+.row p~h5 {
     margin-top: 0;
 }
 
@@ -401,27 +444,20 @@ p+h5 {
  * but absolutely positioned to appear at the top of the page 
  */
 #header {
-    height: 150px;
+    height: 95px;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background: url('./../images/headerbg.png') repeat-x;
-    background: #000000; /* Old browsers */
-    background: -moz-linear-gradient(top,  #000000 0%, #010100 7%, #222222 94%, #333333 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(7%,#010100), color-stop(94%,#222222), color-stop(100%,#333333)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  #000000 0%,#010100 7%,#222222 94%,#333333 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  #000000 0%,#010100 7%,#222222 94%,#333333 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  #000000 0%,#010100 7%,#222222 94%,#333333 100%); /* IE10+ */
-    background: linear-gradient(top,  #000000 0%,#010100 7%,#222222 94%,#333333 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#333333',GradientType=0 ); /* IE6-9 */
 }
 
 #masthead h1 {
+    color: #4aed05;
     line-height: 90px;
+    margin: 0;
 }
 
-#masthead a {
+#masthead  a {
     color: #ffcf79;
     color: #4aed05;
 }
@@ -429,24 +465,39 @@ p+h5 {
 /* Nav is a separate view file from header it's injected 
  * into the HTML after the header but appears within header
  */
+
 #nav {
-    height: 40px;
-    margin: 110px auto 0;
     position: relative;
     z-index: 10;
+    width: 100%;
+    height: 40px;
+    margin: 95px 0 0;
+    background: -moz-linear-gradient(#333, #111);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#333) to(#111)); /*old webkit*/
+    background: -webkit-linear-gradient(#333, #111); /*new webkit*/
+    background: -ms-linear-gradient(#333, #111); /*IE10*/
+    background: -o-linear-gradient(#333, #111); /*opera 11.10+*/
+    background: linear-gradient(#333, #111); /*future CSS3 browsers*/
 }
 
 #nav ul li {
     float: left;
-    margin-right: 20px;
+    border-right: 1px solid  #fbfbfb;
+}
+
+#nav ul li:first-child {
+    border-left: 1px solid  #fbfbfb;
 }
 
 #nav ul li a {
+    display: block;
     line-height: 40px;
     font-size:18px;
     font-weight: bold;
     color:#ffcf79;
-    color: #4aed05;
+    color: #fbfbfb;
+    width: 120px;
+    text-align: center;
 }
 
 #searchBox {
@@ -461,7 +512,12 @@ p+h5 {
     font-size: 20px;
 }
 
-
+#hero-box {
+    height: 300px;
+    margin-top: 10px;
+    background: url("./../images/onthewing.png") no-repeat;
+    border: 1px solid #bbb;
+}
 
 /* ======================================
   Design Specific Classes
@@ -485,8 +541,9 @@ p+h5 {
 
 .box {
     height: 300px;
-    background: #fbfbfb;
-    border: 1px solid #000;
+    background: #fff;
+    border: 1px solid #fff;
+    background: url("./../images/box1.png") no-repeat;
     
 }
 
@@ -498,10 +555,19 @@ p+h5 {
 /* ======================================
   Design Specific Tags
  ======================================*/
-
-p {
-    color: #333;
+body {
+    background: #202020;
 }
+
+body, button, input, select, textarea { font-family: sans-serif; color: #fff; }
+
+a:link, { color: #fbfbfb; }
+
+h1 {color: #fbfbfb}
+
+p a:link, p a:visited {color: #bbb;}
+
+p, p a { font-size: 14px;}
 
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
