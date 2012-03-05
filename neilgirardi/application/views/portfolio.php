@@ -1,4 +1,4 @@
- <div id="siteContainer" class="centered">
+ <div id="siteContainer" class="centered overflow">
      
      <div class="row">
          <h1>This is the main heading</h1>         
@@ -6,7 +6,7 @@
         <p class="grid_6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum porta lacus, ac suscipit sem iaculis et. Vestibulum molestie dignissim dolor, vel congue eros luctus ultricies. Quisque porta adipiscing pulvinar. Sed in arcu a erat lobortis elementum. Cras lobortis tincidunt diam vitae bibendum. Vestibulum facilisis nulla at nisi mollis ullamcorper. Nunc elementum gravida aliquam. Quisque tempor ligula at nunc tincidunt a dapibus urna auctor. 
         </p>
-         <div id="hero-box" class="grid_12 bordres_thin">
+         <div id="hero-box" class="column grid_12 borders_thin">
          </div>
      </div>
     
@@ -21,4 +21,5 @@
          <div class="box grid_4 borders_thin"></div>
          <div class="box grid_4 borders_thin"></div> 
      </div>   
- </div> <!-- end of #gridContainer -->
+     
+ </div> <!-- end of #siteContainer -->

@@ -218,8 +218,6 @@ td { vertical-align: top; }
 /* Main wrapper */
 #siteContainer {
 	width: 960px;
-	min-height: 800px;
-	margin-top: 5px;
 }
 
 
@@ -229,13 +227,31 @@ td { vertical-align: top; }
    ===================================== */
   
 /* Provides a grid chart background for dev purposes.
- * Clicking the back tick key toggles this on and off.
+ * Clicking the back tick key (` / ~) toggles this on and off.
+ * 
+ * REMOVE THIS CLASS BEFORE DEPLOYING TO PRODUCTION!
  */
 .dev_grid {
     background: url("./../images/960_gs_12_columns.jpg") no-repeat;
 }
 
-/* Standard grid width columns without borders */
+/**
+ *     The following is a custom implementation of 960gs:
+ * 
+ *      1. The .grid_12 class is not used because we assume this is a 12-column grid.
+ *          A. I maintain a separate version of this stylesheet for 16-column grid.
+ * 
+ *      2. The .alpha and .omega classes are not used.
+ *          A. I use a different technique which avoids double margins. (See .row and .column classes)
+ * 
+ *      3. I use linked classes to extend .col_x (where x is  number between 1 and 12) to include adjusted widths for elements with borders.
+ * 
+ *      4. I use .row and .column classes to give (semantically correct) fine-grain control over floats.
+ *          A. .grid_x children of a .row container are automatically floated.
+ *          B. .grid_x children of a .column container are NOT floated.
+ */
+
+/* Standard 960 grid widths: NO BORDERS */
 .grid_1 {width: 60px;}
 .grid_2 {width: 140px;}
 .grid_3 {width: 220px;}
@@ -249,7 +265,7 @@ td { vertical-align: top; }
 .grid_11 {width: 860px;}
 .grid_12 {width: 940px;}
 
-/* Standard grid width columns with 1px borders */
+/* Standard 960 grid widths: 1PX BORDERS */
 .grid_1.borders_thin {width: 58px;}
 .grid_2.borders_thin {width: 138px;}
 .grid_3.borders_thin {width: 218px;}
@@ -263,7 +279,7 @@ td { vertical-align: top; }
 .grid_11.borders_thin {width: 858px;}
 .grid_12.borders_thin {width: 938px;}
 
-/* Standard grid width columns with 2px borders */
+/* Standard 960 grid widths: 2PX BORDERS */
 .grid_1.borders_medium {width: 56px;}
 .grid_2.borders_medium {width: 136px;}
 .grid_3.borders_medium {width: 216px;}
@@ -277,7 +293,7 @@ td { vertical-align: top; }
 .grid_11.borders_medium {width: 856px;}
 .grid_12.borders_medium {width: 936px;}
 
-/* Standard grid width columns with 4px borders */
+/* Standard 960 grid widths: 4PX BORDERS */
 .grid_1.borders_thick {width: 52px;}
 .grid_2.borders_thick {width: 132px;}
 .grid_3.borders_thick {width: 212px;}
@@ -292,11 +308,18 @@ td { vertical-align: top; }
 .grid_12.borders_thick {width: 932px;}
 
 
-/* Use .row as a parent container for floated children.
- * Combine .row with grid width classes to build your grid.
+/*  1. Use .row as a parent container for floated children.
+ *  2. Use .column as a parent for non-floated children
+ *  2. Neilther .row nor .column have left and right margins.
+ *      A. Only children of .row and column have left & right margins. 
+ *      B. This eliminates "double margins" 
+ *      C. Therefore, it's not necessary to use .alpha & .omega.
+ * 3. .row and .column have top and bottom margins
  */
 .row , .column{
     float: left;
+    margin-top: 10px;
+    margin-bottom: 10px
 }
 
 .row > .grid_1,
@@ -402,7 +425,12 @@ footer a {
     text-decoration: underline;
 }
 
-/* Paragraphs that follow headings should not have a top margin */
+/**
+ *     1. Paragraphs that follow headings should not have a top margin.
+ *     2. Since .row & .column have top & bottom margins, headings which are first children of these parents should not have top margin.
+ */ 
+ 
+ 
 .column h1+p, 
 .column p+h1,
 .column h2+p,
@@ -412,7 +440,12 @@ footer a {
 .column h4+p,
 .column p+h4,
 .column h5+p,
-.column p+h5 {
+.column p+h5,
+.column h1:first-child,
+.column h2:first-child,
+.column h3:first-child,
+.column h4:first-child,
+.column h5:first-child {
     margin-top: 0;
 }
 
@@ -425,7 +458,12 @@ footer a {
 .row h4~p,
 .row p~h4,
 .row h5~p,
-.row p~h5 {
+.row p~h5,
+.row h1:first-child,
+.row h2:first-child,
+.row h3:first-child,
+.row h4:first-child,
+.row h5:first-child {
     margin-top: 0;
 }
 
@@ -505,7 +543,7 @@ footer a {
 }
 
 #portfolio_sliders {
-    margin-top: 20px;
+   /* margin-top: 20px;*/
 }
 
 #siteContainer h1 {
@@ -514,9 +552,8 @@ footer a {
 
 #hero-box {
     height: 300px;
-    margin-top: 10px;
+   /* margin-top: 10px;*/
     background: url("./../images/onthewing.png") no-repeat;
-    border: 1px solid #bbb;
 }
 
 /* ======================================
@@ -541,8 +578,6 @@ footer a {
 
 .box {
     height: 300px;
-    background: #fff;
-    border: 1px solid #fff;
     background: url("./../images/box1.png") no-repeat;
     
 }
@@ -550,6 +585,10 @@ footer a {
 .test {
     color: #ff3333;
 }
+
+.borders_thin {border: 1px solid #fff;}
+.borders_medium {border: 1px solid #fff;;}
+.borders_thick {border: 2px solid #fff;;}
 
 
 /* ======================================
