@@ -1,7 +1,7 @@
 <div id="nav">
     <div class="grid_12 centered">
         <nav>
-            <ul class="play">
+            <ul class="arimo">
                 <li><a href="portfolio">Portfolio</a></li>
                 <li><a href="resume">Resume</a></li>
                 <li><a href="bio">Bio</a></li>

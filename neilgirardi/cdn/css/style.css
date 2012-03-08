@@ -218,6 +218,7 @@ td { vertical-align: top; }
 /* Main wrapper */
 #siteContainer {
 	width: 960px;
+	margin-top: 5px;
 }
 
 
@@ -227,7 +228,7 @@ td { vertical-align: top; }
    ===================================== */
   
 /* Provides a grid chart background for dev purposes.
- * Clicking the back tick key (` / ~) toggles this on and off.
+ * Clicking the back tick key (~ `) toggles this on and off.
  * 
  * REMOVE THIS CLASS BEFORE DEPLOYING TO PRODUCTION!
  */
@@ -318,8 +319,6 @@ td { vertical-align: top; }
  */
 .row , .column{
     float: left;
-    margin-top: 10px;
-    margin-bottom: 10px
 }
 
 .row > .grid_1,
@@ -421,7 +420,8 @@ a {
 
 p a, 
 #footer a, 
-footer a {
+footer a 
+{
     text-decoration: underline;
 }
 
@@ -440,12 +440,8 @@ footer a {
 .column h4+p,
 .column p+h4,
 .column h5+p,
-.column p+h5,
-.column h1:first-child,
-.column h2:first-child,
-.column h3:first-child,
-.column h4:first-child,
-.column h5:first-child {
+.column p+h5
+{
     margin-top: 0;
 }
 
@@ -458,12 +454,8 @@ footer a {
 .row h4~p,
 .row p~h4,
 .row h5~p,
-.row p~h5,
-.row h1:first-child,
-.row h2:first-child,
-.row h3:first-child,
-.row h4:first-child,
-.row h5:first-child {
+.row p~h5
+{
     margin-top: 0;
 }
 
@@ -490,26 +482,19 @@ footer a {
 }
 
 #masthead h1 {
-    color: #4aed05;
-    line-height: 90px;
+    padding: 30px 0 0;
     margin: 0;
-}
-
-#masthead  a {
-    color: #ffcf79;
-    color: #4aed05;
 }
 
 /* Nav is a separate view file from header it's injected 
  * into the HTML after the header but appears within header
  */
-
 #nav {
     position: relative;
     z-index: 10;
     width: 100%;
     height: 40px;
-    margin: 95px 0 0;
+    margin: 120px 0 0;
     background: -moz-linear-gradient(#333, #111);
     background: -webkit-gradient(linear, 0 0, 0 100%, from(#333) to(#111)); /*old webkit*/
     background: -webkit-linear-gradient(#333, #111); /*new webkit*/
@@ -531,7 +516,6 @@ footer a {
     display: block;
     line-height: 40px;
     font-size:18px;
-    font-weight: bold;
     color:#ffcf79;
     color: #fbfbfb;
     width: 120px;
@@ -542,17 +526,12 @@ footer a {
     line-height: 40px;
 }
 
-#portfolio_sliders {
-   /* margin-top: 20px;*/
-}
-
 #siteContainer h1 {
     font-size: 20px;
 }
 
 #hero-box {
     height: 300px;
-   /* margin-top: 10px;*/
     background: url("./../images/onthewing.png") no-repeat;
 }
 
@@ -560,20 +539,29 @@ footer a {
   Design Specific Classes
  ======================================*/
 
+/* google web fonts */
 .arimo {
     font-family: Arimo;
 }
-
 .michroma {
     font-family: Michroma;
 }
-
 .play {
     font-family: Play;
 }
-
 .ubuntu {
     font-family: Ubuntu;
+}
+
+/* header H1 segments */
+.name {
+    color: #4aed05;
+}
+.title {
+    color: #fbfbfb;
+    display: block;
+    font-weight: normal;
+    font-size: 20px;
 }
 
 .box {
@@ -603,6 +591,8 @@ body, button, input, select, textarea { font-family: sans-serif; color: #fff; }
 a:link, { color: #fbfbfb; }
 
 h1 {color: #fbfbfb}
+
+h2 {font-weight: normal;}
 
 p a:link, p a:visited {color: #bbb;}
 
