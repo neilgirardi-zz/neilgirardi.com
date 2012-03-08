@@ -482,7 +482,7 @@ footer a
 }
 
 #masthead h1 {
-    padding: 30px 0 0;
+    padding: 20px 0 0;
     margin: 0;
 }
 
@@ -505,11 +505,11 @@ footer a
 
 #nav ul li {
     float: left;
-    border-right: 1px solid  #fbfbfb;
+    border-right: 1px solid  #eee;
 }
 
 #nav ul li:first-child {
-    border-left: 1px solid  #fbfbfb;
+    border-left: 1px solid  #eee;
 }
 
 #nav ul li a {
@@ -517,13 +517,17 @@ footer a
     line-height: 40px;
     font-size:18px;
     color:#ffcf79;
-    color: #fbfbfb;
+    color: #eee;
     width: 120px;
     text-align: center;
 }
 
 #searchBox {
     line-height: 40px;
+}
+
+#searchInput {
+    background: #fdfdfd;
 }
 
 #siteContainer h1 {
@@ -558,7 +562,8 @@ footer a
     color: #4aed05;
 }
 .title {
-    color: #fbfbfb;
+    padding-top: 22px;
+    color: #eee;
     display: block;
     font-weight: normal;
     font-size: 20px;
@@ -592,7 +597,10 @@ a:link, { color: #fbfbfb; }
 
 h1 {color: #fbfbfb}
 
-h2 {font-weight: normal;}
+h2 {
+    font-weight: normal;
+    font-family: Arimo;
+}
 
 p a:link, p a:visited {color: #bbb;}
 
