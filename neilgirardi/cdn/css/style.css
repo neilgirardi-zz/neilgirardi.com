@@ -391,22 +391,6 @@ td { vertical-align: top; }
     clear: both;
 }
 
-.pos_abs {
-    position: absolute;
-}
-
-.pos_rel {
-    position: relative;
-}
-
-.block {
-    display: block;
-}
-
-.inline {
-    display: inline;
-}
-
 /* Put this on a parent container which has lost it's height due to two or more
  * floated children
  */
@@ -494,10 +478,15 @@ footer a
  * but absolutely positioned to appear at the top of the page 
  */
 #header {
+    position: absolute;
     height: 95px;
     width: 100%;
     top: 0;
     left: 0;
+}
+
+#masthead {
+    position: relative;
 }
 
 #masthead h1 {
@@ -509,6 +498,7 @@ footer a
  * into the HTML after the header but appears within header
  */
 #nav {
+    position: relative;
     z-index: 10;
     width: 100%;
     height: 40px;
@@ -551,6 +541,7 @@ footer a
 
 #search_box {
     line-height: 40px;
+    position: relative;
 }
 
 #search_input {
@@ -561,6 +552,7 @@ footer a
 }
 
 .search_icon {
+    position: absolute;
     top: 13px;
     left: 190px;
     display: block;
@@ -602,6 +594,7 @@ footer a
     color: #4aed05;
 }
 .title {
+    display: block;
     padding-top: 22px;
     color: #eee;
     font-weight: normal;
@@ -610,6 +603,7 @@ footer a
 
 .skill_list {
     display: none;
+    position: relative;
     top: -30px;
 }
 

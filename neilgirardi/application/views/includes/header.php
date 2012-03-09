@@ -1,12 +1,12 @@
-<div id="header" class="pos_abs">
+<div id="header">
     <header>
-        <div id="masthead" class="grid_12 centered  pos_rel">
+        <div id="masthead" class="grid_12 centered">
             <a href="/">
                 <h1>
                     <span class="name michroma">Neil Girardi</span>
-                    <span class="title block arimo">Software Engineer</span>
+                    <span class="title arimo">Software Engineer</span>
                 </h1>
-                <ul class="skill_list pull_right pos_rel">
+                <ul class="skill_list pull_right">
                     <li>Ajax</li>
                     <li>Android</li>
                     <li>CSS</li>
