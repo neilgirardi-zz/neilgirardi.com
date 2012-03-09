@@ -1,4 +1,4 @@
-<div id="nav">
+<div id="nav" class="pos_rel">
     <div class="grid_12 centered">
         <nav>
             <ul class="arimo">
@@ -9,8 +9,9 @@
             </ul>
         </nav>
         
-        <div id="searchBox" class="pull_right">
-            <input id="searchInput" class="grid_3 rounded" type="text" /> 
+        <div id="search_box" class="pull_right pos_rel" >
+            <input id="search_input" class="grid_3 rounded" type="text" placeholder="search" /> 
+            <span class="search_icon pos_abs"></span>
         </div>
         
     </div>

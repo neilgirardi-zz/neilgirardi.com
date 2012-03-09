@@ -216,7 +216,7 @@ td { vertical-align: top; }
    ====================================== */
 
 /* Main wrapper */
-#siteContainer {
+#site_container {
 	width: 960px;
 	margin-top: 5px;
 }
@@ -235,6 +235,10 @@ td { vertical-align: top; }
 .dev_grid {
     background: url("./../images/960_gs_12_columns.jpg") no-repeat;
 }
+
+.borders_thin {border: 1px solid #eee;}
+.borders_medium {border: 2px solid #eee;}
+.borders_thick {border: 4px solid #eee;}
 
 /**
  *     The following is a custom implementation of 960gs:
@@ -387,6 +391,22 @@ td { vertical-align: top; }
     clear: both;
 }
 
+.pos_abs {
+    position: absolute;
+}
+
+.pos_rel {
+    position: relative;
+}
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
 /* Put this on a parent container which has lost it's height due to two or more
  * floated children
  */
@@ -476,7 +496,6 @@ footer a
 #header {
     height: 95px;
     width: 100%;
-    position: absolute;
     top: 0;
     left: 0;
 }
@@ -490,7 +509,6 @@ footer a
  * into the HTML after the header but appears within header
  */
 #nav {
-    position: relative;
     z-index: 10;
     width: 100%;
     height: 40px;
@@ -522,19 +540,41 @@ footer a
     text-align: center;
 }
 
-#searchBox {
+#nav ul li a:hover {
+    color: #4AED05;
+}
+
+#nav ul li a.activePage {
+    background: #101010;
+    color: #eee;
+}
+
+#search_box {
     line-height: 40px;
 }
 
-#searchInput {
+#search_input {
     background: #fdfdfd;
+    color: #333;
+    font-weight: bold;
+    padding-left: 6px;
 }
 
-#siteContainer h1 {
+.search_icon {
+    top: 13px;
+    left: 190px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("./../images/magnifier-icon.png") no-repeat;
+    cursor: pointer;
+}
+
+#site_container h1 {
     font-size: 20px;
 }
 
-#hero-box {
+#hero_box {
     height: 300px;
     background: url("./../images/onthewing.png") no-repeat;
 }
@@ -564,9 +604,21 @@ footer a
 .title {
     padding-top: 22px;
     color: #eee;
-    display: block;
     font-weight: normal;
     font-size: 20px;
+}
+
+.skill_list {
+    display: none;
+    top: -30px;
+}
+
+.skill_list li {
+    float: left;
+    color: #fff;
+    margin-left: 15px;
+    list-style-position: inside;
+    list-style-type: circle;
 }
 
 .box {
@@ -578,10 +630,6 @@ footer a
 .test {
     color: #ff3333;
 }
-
-.borders_thin {border: 1px solid #fff;}
-.borders_medium {border: 1px solid #fff;;}
-.borders_thick {border: 2px solid #fff;;}
 
 
 /* ======================================
