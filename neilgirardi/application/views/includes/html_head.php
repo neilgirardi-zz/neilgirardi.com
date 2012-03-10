@@ -17,3 +17,4 @@
 <link rel="stylesheet" href="{$cdn}/css/style.css" />
 <link rel="stylesheet" href="{$cdn}/css/jquery-ui.css" />
 </head>
+<body>
