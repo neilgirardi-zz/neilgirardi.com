@@ -6,7 +6,7 @@
 (function($) {
     
     
-     toggleGrid = function() {
+     toggleGrid = function()  {
         $(window).keydown(function(e) {
             var key = e.which;
 
@@ -30,6 +30,14 @@
              .attr('class', 'activePage');
     }
     
+    
+    doModal = function(path) {
+        
+       
+        $('#modal_container').load(path).dialog({modal:true});
+    }
+    
+    
 }) (jQuery);
 
 
@@ -40,6 +48,12 @@ $(function() {
     toggleGrid();
     
     linkIndicator();
+    
+    $('.portfolio_link').click(function(event) {
+        event.preventDefault();
+        var path = $(this).attr('href');
+        doModal(path);
+    });
     
     
 });

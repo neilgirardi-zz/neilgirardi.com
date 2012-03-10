@@ -14,5 +14,6 @@
  <meta name="author" content="">
  <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<link rel="stylesheet" href="{$cdn}css/style.css">
+<link rel="stylesheet" href="{$cdn}/css/style.css" />
+<link rel="stylesheet" href="{$cdn}/css/jquery-ui.css" />
 </head>
