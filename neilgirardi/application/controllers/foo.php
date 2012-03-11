@@ -2,7 +2,7 @@
 
 if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class Test extends CI_Controller {
+class Foo extends CI_Controller {
         
     function __construct() 
     {
@@ -17,7 +17,7 @@ class Test extends CI_Controller {
     
     function Index()
     {
-        $this->load->view('test.html');
+        $this->load->view('foo');
        
     }
     

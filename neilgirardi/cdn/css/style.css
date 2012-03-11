@@ -479,7 +479,7 @@ footer a
  */
 #header {
     position: absolute;
-    height: 95px;
+    height: 120px;
     width: 100%;
     top: 0;
     left: 0;
@@ -569,6 +569,10 @@ footer a
 #hero_box {
     height: 300px;
     background: url("./../images/onthewing.png") no-repeat;
+}
+
+#modal_container {
+    display: none;
 }
 
 /* ======================================

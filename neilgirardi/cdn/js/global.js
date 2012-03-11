@@ -31,10 +31,16 @@
     }
     
     
+    // display selected link content inside of modal
     doModal = function(path) {
-        
        
-        $('#modal_container').load(path).dialog({modal:true});
+         if (!$('#modal_container').length) {
+             var $container = $('<div id="modal_container"/>')
+            $('body').prepend($container);
+            $($container).html('<iframe style="width: 100% !important; min-height: 800px !important;" src="' + path + '"></iframe>').dialog({modal: true});
+        } else {
+            $('#modal_container').html('<iframe style="width: 100% !important; min-height: 800px !important;" src="' + path + '"></iframe>').dialog({modal: true});
+        }
     }
     
     
@@ -49,7 +55,7 @@ $(function() {
     
     linkIndicator();
     
-    $('.portfolio_link').click(function(event) {
+    $('.portfolio_link').on('click', function(event) {
         event.preventDefault();
         var path = $(this).attr('href');
         doModal(path);
