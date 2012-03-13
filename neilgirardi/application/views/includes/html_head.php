@@ -11,7 +11,7 @@
  <title>{$seo.title}</title>
  
  <meta name="description" content="{$seo.description}">
- <meta name="author" content="">
+ <meta name="author" content="{$seo.author}">
  <meta name="viewport" content="width=device-width,initial-scale=1">
 
 <link rel="stylesheet" href="{$cdn}/css/style.css" />

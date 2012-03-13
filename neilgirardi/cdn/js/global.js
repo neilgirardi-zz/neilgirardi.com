@@ -32,14 +32,13 @@
     
     
     // display selected link content inside of modal
-    doModal = function(path) {
-       
-         if (!$('#modal_container').length) {
-             var $container = $('<div id="modal_container"/>')
+    doModal = function(path) {      
+        if (!$('#modal_container').length) {
+            var $container = $('<div id="modal_container"/>');
             $('body').prepend($container);
-            $($container).html('<iframe style="width: 100% !important; min-height: 800px !important;" src="' + path + '"></iframe>').dialog({modal: true});
+            $($container).html('<iframe  src="' + path + '"></iframe>').dialog({modal: true});
         } else {
-            $('#modal_container').html('<iframe style="width: 100% !important; min-height: 800px !important;" src="' + path + '"></iframe>').dialog({modal: true});
+            $('#modal_container').html('<iframe src="' + path + '"></iframe>').dialog({modal: true});
         }
     }
     

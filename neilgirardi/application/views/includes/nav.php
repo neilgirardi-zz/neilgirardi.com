@@ -10,7 +10,7 @@
         </nav>
         
         <div id="search_box" class="pull_right" >
-            <input id="search_input" class="grid_3 rounded" type="text" placeholder="search" /> 
+            <input id="search_input" class="grid_3 rounded" type="search" placeholder="search" /> 
             <span class="search_icon"></span>
         </div>
         

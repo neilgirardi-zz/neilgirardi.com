@@ -1,24 +1,34 @@
- <div id="site_container" class="centered overflow">
-     <div class="row">
-         <h2>This is the main heading</h2>         
-        <p class="grid_6">Vivamus a ante odio, <a class="portfolio_link" href="/welcome/">fermentum</a> adipiscing tellus. Aliquam euismod euismod ipsum id bibendum. In mollis mattis orci in mollis. Praesent in dolor eu magna fringilla facilisis at eu tortor. Ut pharetra pharetra arcu, nec egestas libero laoreet vel. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam id velit id urna facilisis commodo. Nullam fringilla dictum leo in interdum. Mauris convallis risus id orci lacinia nec blandit enim ultrices.</p>
-        <p class="grid_6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum porta lacus, ac suscipit sem iaculis et. Vestibulum molestie dignissim dolor, vel congue eros luctus ultricies. Quisque porta adipiscing pulvinar. Sed in arcu a erat lobortis elementum. Cras lobortis tincidunt diam vitae bibendum. Vestibulum facilisis nulla at nisi mollis ullamcorper. Nunc elementum gravida aliquam. Quisque tempor ligula at nunc tincidunt a dapibus urna auctor. 
-        </p>
-         <div id="hero_box" class="column grid_12 borders_thin">
-         </div>
-     </div>
+ <div id="site_container" class="centered overflow">     
     
     <div class="row">
         <h2 class="arimo">This is a heading</h2>
-        <p class="grid_6">Quisque pellentesque euismod massa, eget vehicula sapien ullamcorper <a href="/">feugiat</a>. Vivamus nec turpis sit amet augue facilisis sollicitudin. Praesent tristique mollis mauris ultricies hendrerit. Aenean tincidunt, sapien id ullamcorper suscipit, purus metus lacinia ante, quis accumsan velit leo a eros. Praesent id tellus ut leo fringilla dictum vitae a tortor. Nam et libero lectus, in vestibulum est. Aenean vitae dapibus purus. </p>
-        <p class="grid_6">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse dictum volutpat neque sed mattis. Sed ac neque mauris. Suspendisse potenti. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum interdum nunc quis nunc imperdiet commodo. Nunc vitae ipsum eros, viverra suscipit felis. Lorem ipsum dolor sit amet, consectetur adipiscing. </p>
+        <p class="grid_6">Quisque pellentesque euismod massa, eget vehicula sapien ullamcorper <a href="/">feugiat</a>.</p>
      </div>
      
-     <div id="portfolio_sliders" class="row">
-         <div class="box grid_4 borders_thin"></div>
-         <div class="box grid_4 borders_thin"></div>
-         <div class="box grid_4 borders_thin"></div> 
+     <div class="row">       
+        <a href="http://deals.parents.com/national" class="portfolio_link grid_6 rounded"><image src="/cdn/images/deals-parents-small.png" /></a>   
+         <p class="grid_6 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum porta lacus, ac suscipit sem iaculis et. Vestibulum molestie dignissim dolor, vel congue eros luctus ultricies. Quisque porta adipiscing pulvinar. Sed in arcu a erat lobortis elementum. Cras lobortis tincidunt diam vitae bibendum. Vestibulum facilisis nulla at nisi mollis ullamcorper. Nunc elementum gravida aliquam. Quisque tempor ligula at nunc tincidunt a dapibus urna auctor. </p>
+     </div>
+     
+     <div class="row">
+         <p class="grid_6 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum porta lacus, ac suscipit sem iaculis et. Vestibulum molestie dignissim dolor, vel congue eros luctus ultricies. Quisque porta adipiscing pulvinar. Sed in arcu a erat lobortis elementum. Cras lobortis tincidunt diam vitae bibendum. Vestibulum facilisis nulla at nisi mollis ullamcorper. Nunc elementum gravida aliquam. Quisque tempor ligula at nunc tincidunt a dapibus urna auctor. </p>
+        <a href="http://allmenus.com" class="portfolio_link grid_6 rounded"><image src="/cdn/images/am-small.png" /></a>
      </div>   
+     
+     <div class="row">       
+        <a href="http://neilgirardi.com/portfolio/celsius" class="portfolio_link grid_6 rounded"><image src="/cdn/images/celsius-edt-2.png" /></a>   
+         <p class="grid_6 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum porta lacus, ac suscipit sem iaculis et. Vestibulum molestie dignissim dolor, vel congue eros luctus ultricies. Quisque porta adipiscing pulvinar. Sed in arcu a erat lobortis elementum. Cras lobortis tincidunt diam vitae bibendum. Vestibulum facilisis nulla at nisi mollis ullamcorper. Nunc elementum gravida aliquam. Quisque tempor ligula at nunc tincidunt a dapibus urna auctor. </p>
+     </div>
+     
+     <div class="row">
+         <p class="grid_6 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum porta lacus, ac suscipit sem iaculis et. Vestibulum molestie dignissim dolor, vel congue eros luctus ultricies. Quisque porta adipiscing pulvinar. Sed in arcu a erat lobortis elementum. Cras lobortis tincidunt diam vitae bibendum. Vestibulum facilisis nulla at nisi mollis ullamcorper. Nunc elementum gravida aliquam. Quisque tempor ligula at nunc tincidunt a dapibus urna auctor. </p>
+        <a href="http://neilgirardi.com/portfolio/jqueryplugin" class="portfolio_link grid_6 rounded"><image src="/cdn/images/jq-plugin-3.png" /></a>       
+     </div>   
+     
+     <div class="row">       
+        <a href="http://kabillion.com" class="portfolio_link grid_6 rounded"><image src="/cdn/images/gaming-site-template.png" /></a> 
+         <p class="grid_6 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum porta lacus, ac suscipit sem iaculis et. Vestibulum molestie dignissim dolor, vel congue eros luctus ultricies. Quisque porta adipiscing pulvinar. Sed in arcu a erat lobortis elementum. Cras lobortis tincidunt diam vitae bibendum. Vestibulum facilisis nulla at nisi mollis ullamcorper. Nunc elementum gravida aliquam. Quisque tempor ligula at nunc tincidunt a dapibus urna auctor. </p>
+     </div>
+     
      
  </div> <!-- end of #siteContainer -->
