@@ -21,7 +21,7 @@ class Portfolio extends CI_Controller
     {
         $this->parser->parse('includes/html_head', array('cdn'=>$this->cdn, 'seo'=>$this->seo));
         $this->parser->parse('includes/nav');
-        $this->parser->parse('portfolio');
+        $this->parser->parse('portfolio', array('cdn'=>$this->cdn));
         $this->parser->parse( 'includes/footer');
         $this->parser->parse( 'includes/header');
         $this->parser->parse('includes/end_of_page', array('cdn'=>$this->cdn));

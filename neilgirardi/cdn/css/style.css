@@ -575,13 +575,15 @@ footer a
     font-size: 20px;
 }
 
-#hero_box {
-    height: 300px;
-    background: url("./../images/onthewing.png") no-repeat;
-}
-
 #modal_container {
     display: none;
+}
+
+#portfolio_slideshow {
+    height: 460px;
+    width: 960px;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 /* ======================================
@@ -665,6 +667,10 @@ p, p a { font-size: 14px;}
     width: 100% !important; 
     min-height: 1080px !important;
     border-width: 0 !important;
+}
+
+.portfolio_link+p, p+p {
+    margin-top: 0;
 }
 
 /* ==|== non-semantic helper classes ========================================
