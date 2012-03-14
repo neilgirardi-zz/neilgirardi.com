@@ -78,8 +78,8 @@ $(function() {
     // Activate slideshow 
     $('#portfolio_slideshow').cycle({fx: 'turnDown', speed: 600});
     
-    // Clicking portfolio <p> triggers doModal()
-    $('#portfolio_slideshow p').click(function() {
+    // Clicking portfolio copy triggers doModal() 
+    $('#portfolio_slideshow p, #portfolio_slideshow h2').click(function() {
        $(this).siblings('a').click(); 
     });
     

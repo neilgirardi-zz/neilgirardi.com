@@ -636,8 +636,20 @@ footer a
     
 }
 
-.test {
-    color: #ff3333;
+.am_highlight {
+    color: #09b1ed;
+}
+
+.parents_highlight {
+    color: #B6136E;
+}
+
+.celsius_highlight {
+    color: #4cb5ec;
+}
+
+.easyexpand_highlight {
+    color: #FFB400;
 }
 
 
@@ -655,7 +667,6 @@ a:link, { color: #fbfbfb; }
 h1 {color: #fbfbfb}
 
 h2 {
-    font-weight: normal;
     font-family: Arimo;
 }
 
