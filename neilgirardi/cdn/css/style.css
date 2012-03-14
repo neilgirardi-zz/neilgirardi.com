@@ -584,6 +584,12 @@ footer a
     width: 960px;
     overflow: hidden;
     cursor: pointer;
+    position: relative;
+}
+
+#portfolio_slideshow .row {
+    height: 460px;
+    width: 960px;
 }
 
 /* ======================================
@@ -668,6 +674,7 @@ h1 {color: #fbfbfb}
 
 h2 {
     font-family: Arimo;
+    font-size: 20px;
 }
 
 p a:link, p a:visited {color: #bbb;}

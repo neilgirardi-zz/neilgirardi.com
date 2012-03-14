@@ -76,7 +76,7 @@ $(function() {
     });
     
     // Activate slideshow 
-    $('#portfolio_slideshow').cycle({fx: 'turnDown', speed: 600});
+    $('#portfolio_slideshow').cycle({fx: 'turnDown', delay: -4000});
     
     // Clicking portfolio copy triggers doModal() 
     $('#portfolio_slideshow p, #portfolio_slideshow h2').click(function() {
