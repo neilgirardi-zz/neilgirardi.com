@@ -1,4 +1,4 @@
- <div id="site_container" class="centered overflow">     
+ <div id="site_container" class="full_grid_width centered nudge_top overflow">     
     
     <div class="row">
         <h2 class="arimo">This is a heading</h2>
@@ -6,36 +6,41 @@
         <p class="grid_6">Vestibulum non dolor diam, nec elementum velit. Vestibulum nibh dui, elementum sed sagittis et, semper vitae nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque non erat dui. Donec vestibulum augue a urna tincidunt in scelerisque risus aliquam. Nulla facilisi. Quisque non neque ac ipsum faucibus tempus id sit amet magna. Etiam sed est ut est ornare blandit. Praesent faucibus interdum massa quis mattis. Ut tincidunt, lacus id interdum egestas, lectus turpis pellentesque enim, at egestas mi leo ut nisi. Sed gravida, justo non blandit tincidunt, risus mi pharetra nisi, suscipit consequat tortor leo sit amet nunc. Aliquam vestibulum enim eu metus dapibus at euismod sem luctus. </p>
     </div>
      
-     <div id="portfolio_slideshow">  
-                
-         <div class="row">
-             <a class="portfolio_link grid_6" href="http://deals.parents.com/national"><img src="{$cdn}/images/parents-460.png" width="452" height="452" /></a>
-             <h2 class="parents_highlight grid_6">Deals.Parents.com</h2>
-             <p class="grid_6">Suspendisse et libero sit amet massa sagittis tristique. Ut id fringilla quam. Ut sollicitudin purus et metus ornare tempor. Etiam ante nisl, sodales eget facilisis varius, imperdiet quis ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi euismod luctus velit, dictum aliquam dui cursus non. Sed egestas congue suscipit. Vivamus pellentesque facilisis vehicula. Nulla facilisi. Donec lobortis, odio tincidunt auctor tempor, nisl quam adipiscing lorem, volutpat pulvinar augue libero ac purus. Donec venenatis laoreet nibh in varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu leo sit amet massa consectetur consectetur vitae sit amet mi. Vestibulum purus nisi, pulvinar volutpat condimentum eu, faucibus quis odio. Morbi faucibus magna sagittis urna mattis pretium. Vestibulum elementum cursus sagittis. </p> 
-         <p class="grid_6">Integer porta fringilla ultrices. Nam in dolor ac magna sollicitudin ultricies vitae sit amet arcu. Suspendisse turpis elit, vehicula blandit feugiat in, elementum vitae tellus. Duis urna felis, lobortis at tempus eu, tempor sit amet nulla. Donec tempus dapibus nisl, sit amet mattis risus porta eget. Nulla eu consectetur ipsum. Mauris placerat sem eu nulla viverra egestas euismod purus pulvinar. Praesent justo tortor, accumsan quis cursus a, ultricies sit amet est. Ut risus turpis, condimentum at convallis ut, tristique et nunc. Vivamus ultricies egestas erat id tempor.</p>
-      </div>
+    <div id="portfolio_slideshow" class="full_grid_width">  
           
-      <div class="row">
-         <a class="portfolio_link grid_6" href="http://allmenus.com"><img src="{$cdn}/images/allmenus-460.png" width="460" height="460" /></a>
-         <h2 class="am_highlight grid_6">Allmenus.com</h2>
-         <p class="grid_6">Suspendisse et libero sit amet massa sagittis tristique. Ut id fringilla quam. Ut sollicitudin purus et metus ornare tempor. Etiam ante nisl, sodales eget facilisis varius, imperdiet quis ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi euismod luctus velit, dictum aliquam dui cursus non. Sed egestas congue suscipit. Vivamus pellentesque facilisis vehicula. Nulla facilisi. Donec lobortis, odio tincidunt auctor tempor, nisl quam adipiscing lorem, volutpat pulvinar augue libero ac purus. Donec venenatis laoreet nibh in varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu leo sit amet massa consectetur consectetur vitae sit amet mi. Vestibulum purus nisi, pulvinar volutpat condimentum eu, faucibus quis odio. Morbi faucibus magna sagittis urna mattis pretium. Vestibulum elementum cursus sagittis. </p> 
-         <p class="grid_6">Integer porta fringilla ultrices. Nam in dolor ac magna sollicitudin ultricies vitae sit amet arcu. Suspendisse turpis elit, vehicula blandit feugiat in, elementum vitae tellus. Duis urna felis, lobortis at tempus eu, tempor sit amet nulla. Donec tempus dapibus nisl, sit amet mattis risus porta eget. Nulla eu consectetur ipsum. Mauris placerat sem eu nulla viverra egestas euismod purus pulvinar. Praesent justo tortor, accumsan quis cursus a, ultricies sit amet est. Ut risus turpis, condimentum at convallis ut, tristique et nunc. Vivamus ultricies egestas erat id tempor.</p>
-      </div>
-         
-      <div class="row">
-         <a class="portfolio_link grid_6" href="http://neilgirardi.com/portfolio/celsius"><img src="{$cdn}/images/celsius-460.png"  width="460" height="460" /></a>
-         <h2 class="celsius_highlight grid_6">Celsius.com</h2>
-         <p class="grid_6">Suspendisse et libero sit amet massa sagittis tristique. Ut id fringilla quam. Ut sollicitudin purus et metus ornare tempor. Etiam ante nisl, sodales eget facilisis varius, imperdiet quis ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi euismod luctus velit, dictum aliquam dui cursus non. Sed egestas congue suscipit. Vivamus pellentesque facilisis vehicula. Nulla facilisi. Donec lobortis, odio tincidunt auctor tempor, nisl quam adipiscing lorem, volutpat pulvinar augue libero ac purus. Donec venenatis laoreet nibh in varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu leo sit amet massa consectetur consectetur vitae sit amet mi. Vestibulum purus nisi, pulvinar volutpat condimentum eu, faucibus quis odio. Morbi faucibus magna sagittis urna mattis pretium. Vestibulum elementum cursus sagittis. </p> 
-         <p class="grid_6">Integer porta fringilla ultrices. Nam in dolor ac magna sollicitudin ultricies vitae sit amet arcu. Suspendisse turpis elit, vehicula blandit feugiat in, elementum vitae tellus. Duis urna felis, lobortis at tempus eu, tempor sit amet nulla. Donec tempus dapibus nisl, sit amet mattis risus porta eget. Nulla eu consectetur ipsum. Mauris placerat sem eu nulla viverra egestas euismod purus pulvinar. Praesent justo tortor, accumsan quis cursus a, ultricies sit amet est. Ut risus turpis, condimentum at convallis ut, tristique et nunc. Vivamus ultricies egestas erat id tempor.</p>
-      </div>
-  
-  <div class="row">
-         <a class="portfolio_link grid_6" href="http://neilgirardi.com/portfolio/jqueryplugin"><img src="{$cdn}/images/easy-expand-460.png" width="460" height="460" /></a>
-         <h2 class="easyexpand_highlight grid_6">EasyExpand()</h2>
-         <p class="grid_6">Suspendisse et libero sit amet massa sagittis tristique. Ut id fringilla quam. Ut sollicitudin purus et metus ornare tempor. Etiam ante nisl, sodales eget facilisis varius, imperdiet quis ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi euismod luctus velit, dictum aliquam dui cursus non. Sed egestas congue suscipit. Vivamus pellentesque facilisis vehicula. Nulla facilisi. Donec lobortis, odio tincidunt auctor tempor, nisl quam adipiscing lorem, volutpat pulvinar augue libero ac purus. Donec venenatis laoreet nibh in varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu leo sit amet massa consectetur consectetur vitae sit amet mi. Vestibulum purus nisi, pulvinar volutpat condimentum eu, faucibus quis odio. Morbi faucibus magna sagittis urna mattis pretium. Vestibulum elementum cursus sagittis. </p> 
-         <p class="grid_6">Integer porta fringilla ultrices. Nam in dolor ac magna sollicitudin ultricies vitae sit amet arcu. Suspendisse turpis elit, vehicula blandit feugiat in, elementum vitae tellus. Duis urna felis, lobortis at tempus eu, tempor sit amet nulla. Donec tempus dapibus nisl, sit amet mattis risus porta eget. Nulla eu consectetur ipsum. Mauris placerat sem eu nulla viverra egestas euismod purus pulvinar. Praesent justo tortor, accumsan quis cursus a, ultricies sit amet est. Ut risus turpis, condimentum at convallis ut, tristique et nunc. Vivamus ultricies egestas erat id tempor.</p>
-      </div>
+        <!--// parents //-->      
+        <div class="row">
+            <a class="portfolio_link grid_6" href="http://deals.parents.com/national"><img src="{$cdn}/images/parents-460.png" width="460" height="460" /></a>
+             <h2 class="parents_highlight grid_6 nudge_top">Deals.Parents.com</h2>
+             <p class="grid_6">I did the front-end development for <a class="portfolio_link parents_highlight" href="http://deals.parents.com/national">Deals.Parents.com</a> in 2010 while working with Group Commerce.  <a class="portfolio_link parents_highlight" href="http://groupcommerce.com">Group Commerce</a> is an e-commerce company which provides white-label group deal-buying solutions to publishers. This particular e-commerce site was commissioned by <a class="portfolio_link parents_highlight" href="http://parentsmagazine.com">Parents Magazine</a>.</p> 
+        </div>
+        <!--// //-->
+       
+        <!--// allmenus //-->   
+        <div class="row">
+            <a class="portfolio_link grid_6" href="http://allmenus.com"><img src="{$cdn}/images/allmenus-460.png" width="460" height="460" /></a>
+            <h2 class="am_highlight grid_6 nudge_top">Allmenus.com</h2>
+            <p class="grid_6">I took ownership of front-end development for <a class="portfolio_link am_highlight" href="http://allmenus.com">Allmenus.com</a> and <a class="portfolio_link am_highlight" href="http://campusfood.com">Campusfood.com</a> after joining the Dotmenu development team in April of 2011. At the time, the site's page load time was prohibitively long. This in term had a negative impact on our search engine rankings. I was able to reduce the page load time by a factor of four.</p> 
+        <p class="grid_6">In October, 2011 Dotmenu merged with <a class="am_highlight portfolio_link" href="http://grubhub.com">GrubHub</a>. I have since been a proud and happy member of the GrubHub NY development team. Over the past six months we've created two android apps for the grubhub product line. These apps eill soon be publically available on the Android market.</p>
+        </div>
+        <!--// //-->
       
-  </div>
+        <!--// celsius //-->   
+        <div class="row">
+            <a class="portfolio_link grid_6" href="http://neilgirardi.com/portfolio/celsius"><img src="{$cdn}/images/celsius-460.png"  width="460" height="460" /></a>
+            <h2 class="celsius_highlight grid_6  nudge_top">Celsius.com</h2>
+            <p class="grid_6">I created this web site for Fat Boy Records recording artist Celsius in 2010. This site features JavaScript animation, a custom MP3 player, and uses the YouTube API to make the artist's video chanel directly available.  I developed a custom back-end for the site which enables the artist to easily manage content and email campaigns.</p> 
+           
+        </div>
+        <!--// //-->
+         
+        <!--// easyexpand //-->   
+        <div class="row">
+            <a class="portfolio_link grid_6" href="http://neilgirardi.com/portfolio/jqueryplugin"><img src="{$cdn}/images/easy-expand-460.png" width="460" height="460" /></a>
+            <h2 class="easyexpand_highlight grid_6  nudge_top">EasyExpand()</h2>
+            <p class="grid_6">This is a jQuery plugin I made in 2011. I was working for <a class="portfolio_link easyexpand_highlight href="http://groupcommerce.com">Group Commerce</a> at the time, enhancing the UI of their deal publishing CMS. I was asked to add an "accordion" menu. We were already using jQuery UI but the built-in accordion did not suit our needs. At issue was the fact that the jQuery accordion permits the user to open only one item at a time. This plugin is light-weight, easily customizable, and does not limit the user's interaction.</p> 
+        </div>
+        <!--// //-->
+    </div>
      
 </div> <!-- end of #siteContainer -->

@@ -50,9 +50,7 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
    Links
    ========================================================================== */
 
-a { color: #00e; }
-a:visited { color: #551a8b; }
-a:hover { color: #06e; }
+a {font-weight: bold;}
 a:focus { outline: thin dotted; }
 
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
@@ -215,11 +213,7 @@ td { vertical-align: top; }
    Universal IDs
    ====================================== */
 
-/* Main wrapper */
-#site_container {
-	width: 960px;
-	margin-top: 5px;
-}
+
 
 
 
@@ -255,6 +249,10 @@ td { vertical-align: top; }
  *          A. .grid_x children of a .row container are automatically floated.
  *          B. .grid_x children of a .column container are NOT floated.
  */
+
+.full_grid_width {
+    width: 960px;
+}
 
 /* Standard 960 grid widths: NO BORDERS */
 .grid_1 {width: 60px;}
@@ -323,6 +321,7 @@ td { vertical-align: top; }
  */
 .row , .column{
     float: left;
+    display: inline;
     margin-bottom: 20px;
 }
 
@@ -382,6 +381,10 @@ td { vertical-align: top; }
     margin-right: 10px;
 }
 
+.nudge_top {
+    margin-top: 5px;
+}
+
 /* Use this to put a left float on element's whose parent is not a .row */
 .pull_left {
     float: left;
@@ -421,6 +424,16 @@ td { vertical-align: top; }
     border-width: 0;
 }
 
+.search_icon {
+    position: absolute;
+    top: 13px;
+    left: 190px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("./../images/magnifier-icon.png") no-repeat;
+    cursor: pointer;
+}
 
 /* ======================================
    Universal Tags
@@ -471,6 +484,53 @@ footer a
 {
     margin-top: 0;
 }
+
+
+/* ======================================
+   Resume Tags
+   ===================================== */
+  
+ .resume a:link, .resume a:visited {
+    color: #4AED05;
+}
+  
+.resume a:hover {
+    text-decoration: underline;
+}
+
+.resume h3 {
+    margin-top: 0.25em;
+    margin-bottom: 0.5em;
+}
+
+.resume h2 {
+    margin-top: 0.725em;
+    margin-bottom: 0.725em;
+}
+
+.resume .date_range {
+    float: left;
+    margin-right: 10px;
+}
+
+.resume .date_range+h3 {
+    float: left;
+    margin-top: -0.12em;
+}
+
+.resume .date_range+h3+h4{
+    clear: both;
+    margin-bottom: 0.25em;
+}
+
+.resume ul {
+    margin-bottom: 2em;
+}
+
+.resume ul li {
+    margin-bottom: 0.25em;
+}
+
 
 
 /* ==|=== Design Specific Styles ========================================================================
@@ -554,21 +614,12 @@ footer a
 }
 
 #search_input {
-    background: #fdfdfd;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fff), to(#eaeaea));
+    background: -moz-linear-gradient(#fff, #eaeaea);
+    background: linear-gradient(#fff,#eaeaea);
     color: #333;
     font-weight: bold;
     padding-left: 6px;
-}
-
-.search_icon {
-    position: absolute;
-    top: 13px;
-    left: 190px;
-    display: block;
-    width: 16px;
-    height: 16px;
-    background: url("./../images/magnifier-icon.png") no-repeat;
-    cursor: pointer;
 }
 
 #site_container h1 {
@@ -581,7 +632,6 @@ footer a
 
 #portfolio_slideshow {
     height: 460px;
-    width: 960px;
     overflow: hidden;
     cursor: pointer;
     position: relative;
@@ -614,6 +664,7 @@ footer a
 .name {
     color: #4aed05;
 }
+
 .title {
     display: block;
     padding-top: 22px;
@@ -636,25 +687,19 @@ footer a
     list-style-type: circle;
 }
 
-.box {
-    height: 300px;
-    background: url("./../images/box1.png") no-repeat;
-    
-}
-
-.am_highlight {
+.am_highlight, a.am_highlight:link, a.am_highlight:visited {
     color: #09b1ed;
 }
 
-.parents_highlight {
+.parents_highlight, a.parents_highlight:link, a.parents_highlight:visited {
     color: #B6136E;
 }
 
-.celsius_highlight {
+.celsius_highlight, a.celsius_highlight:link, a.celsius_highlight:visited {
     color: #4cb5ec;
 }
 
-.easyexpand_highlight {
+.easyexpand_highlight, a.easyexpand_highlight:link, a.easyexpand_highlight:visited {
     color: #FFB400;
 }
 
@@ -670,6 +715,7 @@ body, button, input, select, textarea { font-family: sans-serif; color: #fff; }
 
 a:link, { color: #fbfbfb; }
 
+
 h1 {color: #fbfbfb}
 
 h2 {
@@ -677,7 +723,9 @@ h2 {
     font-size: 20px;
 }
 
+/*
 p a:link, p a:visited {color: #bbb;}
+*/
 
 p, p a { font-size: 14px;}
 
@@ -687,7 +735,7 @@ p, p a { font-size: 14px;}
     border-width: 0 !important;
 }
 
-.portfolio_link+p, p+p {
+.portfolio_link+p, p+p, .portfolio_link+h2 {
     margin-top: 0;
 }
 

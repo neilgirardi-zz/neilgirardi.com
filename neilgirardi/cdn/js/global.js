@@ -45,7 +45,7 @@
     doModal = function(path) {     
         // check for existing #modal_container 
         if (!$('#modal_container').length) {
-            // create container and prepend it to body
+            // create the modal container if it doesn't exist and prepend it to body
             var $container = $('<div id="modal_container"/>');
             $('body').prepend($container);
             $($container).html('<iframe  src="' + path + '"></iframe>').dialog({modal: true});
