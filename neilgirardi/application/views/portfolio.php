@@ -1,9 +1,10 @@
  <div id="site_container" class="full_grid_width centered nudge_top overflow">     
     
     <div class="row">
-        <h2 class="arimo">This is a heading</h2>
-        <p class="grid_6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In justo elit, ullamcorper vel faucibus ac, posuere id nisl. Mauris scelerisque, erat vitae dapibus adipiscing, diam eros sollicitudin nibh, ut tincidunt eros turpis sit amet urna. Donec a risus lectus, vitae porttitor arcu. Nunc non pulvinar tortor. Sed aliquet quam consequat metus aliquet rhoncus. Maecenas semper velit ac mauris euismod consequat. Aliquam quis nisi ac massa viverra pellentesque. In hac habitasse platea dictumst. Sed vitae leo purus, sed porttitor dolor. Pellentesque et diam non mauris sodales vehicula non ac turpis. Nunc nec purus quis sem congue egestas eu sed ante. </p>
-        <p class="grid_6">Vestibulum non dolor diam, nec elementum velit. Vestibulum nibh dui, elementum sed sagittis et, semper vitae nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque non erat dui. Donec vestibulum augue a urna tincidunt in scelerisque risus aliquam. Nulla facilisi. Quisque non neque ac ipsum faucibus tempus id sit amet magna. Etiam sed est ut est ornare blandit. Praesent faucibus interdum massa quis mattis. Ut tincidunt, lacus id interdum egestas, lectus turpis pellentesque enim, at egestas mi leo ut nisi. Sed gravida, justo non blandit tincidunt, risus mi pharetra nisi, suscipit consequat tortor leo sit amet nunc. Aliquam vestibulum enim eu metus dapibus at euismod sem luctus. </p>
+        <h2 class="arimo">Welcome</h2>
+        <p class="grid_6">If you're looking for the New York web developer named Girardi, you've found him. If you're looking for the New York Yankee named Girardi, you're in the wrong place &mdash; but feel free to stick around.<br /><br />I'm Neil. I make web sites and mobile apps. The slideshow below features a sampling of my work. Simply hover over any slide to pause it. Click on any slide to see the live site.</p>
+        <p class="grid_6">My resume and bio are availble on the site, but here's the thunbnail sketch: my work tends to focus on front-end &amp; UI development , although I'm proficient in object oriented programming.  I love what I do and enjoy working with like-minded professionals. Feel free to email me with questions or comments or just to say hello.<br /><br />Enjoy the site.<br />&nbsp; &nbsp;&mdash;&nbsp;&nbsp;Neil
+            </p>
     </div>
      
     <div id="portfolio_slideshow" class="full_grid_width">  

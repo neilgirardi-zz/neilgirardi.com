@@ -13,11 +13,11 @@
             <ul>
                 <li>Pixel-perfect cross-browser HTML5 / CSS3</li>
                 <li>JavaScript &amp;  jQuery</li>
-                <li>Ajax UI implementation</li>
+                <li>Ajax</li>
                 <li>Object-Oriented PHP</li>
-                <li>Android development</li>
+                <li>Android</li>
                 <li>Java</li>
-                <li>WordPress theme development</li>
+                <li>WordPress</li>
             </ul>
     
             <h2>Employment:</h2>
@@ -34,8 +34,8 @@
             <h4>Web Developer</h4> 
             <ul>
                 <li>Front-end development and PHP programming for <a target="_blank" href="allmenus.com">allmenus.com</a> &amp; <a target="_blank" href="campusfood.com">campusfood.com.</a></li>
-                <li>Reduced average page load times for allmenus.com by a factor of 4.</li>
-                <li>Replaced "Web 1.0" user interface of allmenus.com with a new modern Ajax UI.</li>
+                <li>Reduced average page load times for allmenus.com by a <strong>factor of 4</strong>.</li>
+                <li>Replaced the aging "Web 1.0" user interface of allmenus.com with a new modern Ajax UI.</li>
             </ul>
     
             <span class="date_range">2011</span>
