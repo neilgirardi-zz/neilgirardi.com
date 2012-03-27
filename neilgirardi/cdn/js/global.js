@@ -86,10 +86,10 @@ $(function() {
     // Hovering anywhere inside the sllideshow container pauses the slideshow
     $('#portfolio_slideshow').hover(
         function() {
-             $('#portfolio_slideshow').cycle('pause')
+             $('#portfolio_slideshow').cycle('pause');
          },
         function() {
-             $('#portfolio_slideshow').cycle('resume')
+             $('#portfolio_slideshow').cycle('resume');
         });
     
     

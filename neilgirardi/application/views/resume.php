@@ -56,10 +56,10 @@
             </ul>
     
             <span class="date_range">2008 &ndash; 2010</span>
-            <h3 style="color: #4AED05; margin-bottom: 0.75em;">Freelance Web Developer</h3>
+            <h3 style="margin-bottom: 0.75em;">Freelance Web Developer</h3>
             <h4>Clients include:</h4>
             
-            <h3 style="color: #4AED05; margin-top: 0.5em;">L&rsquo;Oreal</h3>
+            <h3 style="margin-top: 0.5em;">L&rsquo;Oreal</h3>
             <ul>
                 <li>Worked on the UI for  the company's internal video library application.</li>
             </ul>

@@ -24,6 +24,8 @@ ExpiresByType application/x-javascript "access plus 1 years"
 ExpiresByType application/x-shockwave-flash "access plus 1 years"
 </IfModule>
 
+</FilesMatch>
+
 <IfModule mod_rewrite.c>
     RewriteEngine On
     

@@ -2,8 +2,8 @@
     
     <div class="row">
         <h2 class="arimo">Welcome</h2>
-        <p class="grid_6">If you're looking for the New York web developer named Girardi, you've found him. If you're looking for the New York Yankee named Girardi, you're in the wrong place &mdash; but feel free to stick around.<br /><br />I'm Neil. I make web sites and mobile apps. The slideshow below features a sampling of my work. Simply hover over any slide to pause it. Click on any slide to see the live site.</p>
-        <p class="grid_6">My resume and bio are availble on the site, but here's the thunbnail sketch: my work tends to focus on front-end &amp; UI development , although I'm proficient in object oriented programming.  I love what I do and enjoy working with like-minded professionals. Feel free to email me with questions or comments or just to say hello.<br /><br />Enjoy the site.<br />&nbsp; &nbsp;&mdash;&nbsp;&nbsp;Neil
+        <p class="grid_6">Hi I'm Neil Girardi. I'm a software engineer who developes websites and mobile apps. The slideshow below features a sampling of selected works. Simply hover over any slide to pause it. Click on any slide to see the live site.</p>
+        <p class="grid_6">I love what I do and enjoy working with like-minded professionals. Feel free to email me here.<br /><br />Enjoy the site.<br />&nbsp; &nbsp;&mdash;&nbsp;&nbsp;Neil
             </p>
     </div>
      
