@@ -57,6 +57,13 @@
     }
     
     
+    alignPortfolioText = function() {
+        var tHeight = $("#portfolio_slideshow .wrapper").height();
+        var tMargin = (460 - tHeight)  / 5.5 + "px";
+        $("#portfolio_slideshow .wrapper").css("marginTop", tMargin);
+    }
+    
+    
 }) (jQuery);
 
 
@@ -68,6 +75,8 @@ $(function() {
     
     linkIndicator();
     
+    alignPortfolioText();
+    
     // Bind portfolio links to doModal() 
     $('.portfolio_link').on('click', function(event) {
         event.preventDefault();
@@ -76,7 +85,7 @@ $(function() {
     });
     
     // Activate slideshow 
-    $('#portfolio_slideshow').cycle({fx: 'turnDown', delay: -4000});
+   $('#portfolio_slideshow').cycle({fx: 'turnDown', delay: -4000});
     
     // Clicking portfolio copy triggers doModal() 
     $('#portfolio_slideshow p, #portfolio_slideshow h2').click(function() {
@@ -84,7 +93,7 @@ $(function() {
     });
     
     // Hovering anywhere inside the sllideshow container pauses the slideshow
-    $('#portfolio_slideshow').hover(
+    $('#portfolio_slideshow a, #portfolio_slideshow p, #portfolio_slideshow h2').hover(
         function() {
              $('#portfolio_slideshow').cycle('pause');
          },

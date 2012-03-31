@@ -14,7 +14,7 @@
  <meta name="author" content="{$seo.author}">
  <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<link rel="stylesheet" href="{$cdn}/css/portfolio.css" />
+<link rel="stylesheet" href="{$cdn}/css/styles.css" />
 <link rel="stylesheet" href="{$cdn}/css/jquery-ui.css" />
 </head>
 <body>
