@@ -1,6 +1,6 @@
 <div id="nav">
     
-    <div class="grid_12 centered">
+    <div class="grid-12 centered">
         <nav>
             <ul class="arimo">
                 <li><a href="portfolio">Portfolio</a></li>
@@ -10,9 +10,9 @@
             </ul>
         </nav>
         
-        <div id="search_box" class="pull_right" >
-            <input id="search_input" class="grid_3 rounded" type="search" placeholder="search" /> 
-            <span class="search_icon"></span>
+        <div id="search-box" class="pull-right" >
+            <input id="search-input" class="grid-3 rounded" type="search" placeholder="search" /> 
+            <span class="search-icon"></span>
         </div>
         
     </div>

@@ -1,6 +1,6 @@
 <div id="header">
     <header>
-        <div id="masthead" class="grid_12 centered">
+        <div id="masthead" class="grid-12 centered">
             <a href="/">
                 <h1>
                     <span class="name michroma">Neil Girardi</span>
