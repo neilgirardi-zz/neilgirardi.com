@@ -4,7 +4,7 @@
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-<link href='http://fonts.googleapis.com/css?family=Michroma|Arimo|Ubuntu|Play|Doppio+One|Quantico' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Questrial|Arimo|Metrophobic' rel='stylesheet' type='text/css'>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 

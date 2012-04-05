@@ -3,7 +3,7 @@
         <div id="masthead" class="grid-12 centered">
             <a href="/">
                 <h1>
-                    <span class="name michroma">Neil Girardi</span>
+                    <span class="questrial name">Neil Girardi</span>
                     <span class="title arimo">Software Engineer</span>
                 </h1>
             </a>    

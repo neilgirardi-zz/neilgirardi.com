@@ -560,7 +560,7 @@ footer a
 }
 
 #masthead h1 {
-    padding: 20px 0 0;
+    padding: 30px 0 0;
     margin: 0;
 }
 
@@ -592,6 +592,7 @@ footer a
 
 #nav ul li a {
     display: block;
+    font-weight: normal;
     line-height: 40px;
     font-size:18px;
     color:#ffcf79;
@@ -601,7 +602,12 @@ footer a
 }
 
 #nav ul li a:hover, #nav ul li a.activePage:hover {
-    color: #4AED05;
+    color: #2db4ff;
+}
+
+#nav ul li a:active {
+    background: #101010;
+    color: #124f71;
 }
 
 #nav ul li a.activePage {
@@ -648,27 +654,35 @@ footer a
  ======================================*/
 
 /* google web fonts */
+
+.questrial {
+    font-family: Questrial;
+}
+
 .arimo {
     font-family: Arimo;
 }
-.michroma {
-    font-family: Michroma;
+
+.open-sans {
+    font-family: "Open Sans";
 }
-.play {
-    font-family: Play;
+
+.actor {
+    font-family: Actor;
 }
-.ubuntu {
-    font-family: Ubuntu;
+
+.metrophobic {
+    font-family: Metrophobic;
 }
 
 /* header H1 segments */
 .name {
-    color: #4aed05;
+    font-size: 34px;
 }
 
 .title {
     display: block;
-    padding-top: 22px;
+    /*padding-top: 14px;*/
     color: #eee;
     font-weight: normal;
     font-size: 20px;
@@ -688,26 +702,10 @@ footer a
     list-style-type: circle;
 }
 
-.am-highlight, a.am-highlight:link, a.am-highlight:visited {
-    color: #09b1ed;
+.wrapper {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }
-
-.helpudeliver-highlight, a.helpudeliver-highlight, a.helpudeliver-highlight:visited {
-    color: #2db4ff;
-}
-
-.parents-highlight, a.parents-highlight:link, a.parents-highlight:visited {
-    color: #B6136E;
-}
-
-.celsius-highlight, a.celsius-highlight:link, a.celsius-highlight:visited {
-    color: #4cb5ec;
-}
-
-.easyexpand-highlight, a.easyexpand-highlight:link, a.easyexpand-highlight:visited {
-    color: #FFB400;
-}
-
 
 
 /* ======================================
@@ -719,14 +717,21 @@ body {
 
 body, button, input, select, textarea { font-family: sans-serif; color: #fff; }
 
-a:link, { color: #fbfbfb; }
+a:link, a:visited{ color: #2db4ff; }
 
 
-h1 {color: #fbfbfb}
+h1 {color: #2db4ff;}
 
-h2 {
+h2 { font-size: 20px;}
+
+.portfolio h2 {
+    font-family: Metrophobic;
+    color: #2db4ff;
+}
+
+.resume h2 {
     font-family: Arimo;
-    font-size: 20px;
+    color: #eee;
 }
 
 /*
