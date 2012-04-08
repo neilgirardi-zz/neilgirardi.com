@@ -89,7 +89,7 @@ $(function() {
     
     // Clicking portfolio copy triggers doModal() 
     $('#portfolio-slideshow p, #portfolio-slideshow h2').click(function() {
-       $(this).siblings('a').click(); 
+       $(this).closest('.wrapper').siblings('a').click(); 
     });
     
     // Hovering anywhere inside the sllideshow container pauses the slideshow
@@ -100,6 +100,33 @@ $(function() {
         function() {
              $('#portfolio-slideshow').cycle('resume');
         });
+        
+        
+        $("#portfolio-slideshow .wrapper").tooltip({ 
+            track: true, 
+            delay: 0, 
+            showURL: false, 
+            opacity: 1, 
+            fixPNG: true, 
+            showBody: " - ", 
+            extraClass: "speech-bubble-right", 
+            top: -180, 
+            left: 5 
+    }); 
+    
+    
+     $("a.portfolio-link").tooltip({ 
+            track: true, 
+            delay: 0, 
+            showURL: false, 
+            opacity: 1, 
+            fixPNG: true, 
+            showBody: " - ", 
+            extraClass: "speech-bubble-left", 
+            top: -180, 
+            left: -260 
+    }); 
+    
     
     
 });
