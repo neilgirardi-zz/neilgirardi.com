@@ -109,7 +109,7 @@ $(function() {
             opacity: 1, 
             fixPNG: true, 
             showBody: " - ", 
-            extraClass: "speech-bubble-right", 
+            extraClass: "speech-bubble right", 
             top: -180, 
             left: 5 
     }); 
@@ -122,7 +122,7 @@ $(function() {
             opacity: 1, 
             fixPNG: true, 
             showBody: " - ", 
-            extraClass: "speech-bubble-left", 
+            extraClass: "speech-bubble left", 
             top: -180, 
             left: -260 
     }); 

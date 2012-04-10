@@ -710,7 +710,7 @@ footer a
 #tooltip {
     position: absolute;
     z-index: 3000;
-    background-color: #eee;
+    background-color: #fff;
     opacity: 0.85;
 }
 
@@ -718,20 +718,19 @@ footer a
     margin-left: 15px;
 }
 
-#tooltip.speech-bubble-right {
-    background: url('./../images/speech-bubble-right.png') no-repeat;
+#tooltip.speech-bubble {
     padding-top: 40px;
     height: 159px;
     width: 247px;
-    color: #333; 
+    color: #2DB4FF; 
 }
 
-#tooltip.speech-bubble-left {
-     background: url('./../images/speech-bubble-left.png') no-repeat;
-    padding-top: 40px;
-    height: 159px;
-    width: 247px;
-    color: #333;
+#tooltip.speech-bubble.right {
+    background: url('./../images/speech-bubble-right.png') no-repeat;
+}
+
+#tooltip.speech-bubble.left {
+    background: url('./../images/speech-bubble-left.png') no-repeat;
 }
 
 
