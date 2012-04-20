@@ -49,7 +49,7 @@ class Recaptcha
   
   function __construct() 
   {
-		$this->_CI =& get_instance();
+	$this->_CI =& get_instance();
     $this->_CI->config->load('recaptcha');
     $this->_CI->lang->load('recaptcha');
     
