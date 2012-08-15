@@ -8,15 +8,15 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
- <title>{$seo.title}</title>
+ <title>{title}</title>  
  
- <meta name="description" content="{$seo.description}">
- <meta name="author" content="{$seo.author}">
+ <meta name="description" content="{description} ">
+ <meta name="author" content="{author}"> 
  <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<link rel="stylesheet" href="{$cdn}/css/styles.css" />
-<link rel="stylesheet" href="{$cdn}/css/jquery-ui.css" />
-<link rel="icon" href="{$cdn}/favicon.ico" type="image/x-icon" />
-<link rel="shortcut icon" href="{$cdn}/favicon.ico" type="image/x-icon" /> 
+<link rel="stylesheet" href="<?php echo CDN; ?>/css/styles.css" />
+<link rel="stylesheet" href="<?php echo CDN; ?>/css/jquery-ui.css" />
+<link rel="icon" href="<?php echo CDN; ?>/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="<?php echo CDN; ?>/favicon.ico" type="image/x-icon" /> 
 </head>
 <body>
