@@ -490,9 +490,15 @@ footer a
    Resume Tags
    ===================================== */
   
- .resume a:link, .resume a:visited {
-    color: /*#4AED05;*/ /*#09B1ED;*/ #fff;
+  .resume {
+      line-height: 150%;
+  }
+ .resume a:hover {
     text-decoration: underline;
+}
+
+.resume a:link, .resume a:visited {
+    color: /*#4AED05;*/ /*#09B1ED;*/ #fff;
 }
   
 .resume a:hover {
@@ -500,8 +506,9 @@ footer a
 }
 
 .resume h3 {
-    margin-top: 0.25em;
-    margin-bottom: 0.5em;
+    float: left;
+    clear: both;
+    margin: 0;
 }
 
 .resume h2 {
@@ -524,12 +531,21 @@ footer a
     margin-bottom: 0.25em;
 }
 
+.resume h4 {
+    float: left;
+    clear: both;
+    margin: 0;
+}
+
 .resume ul {
+    margin-top: 2em;
     margin-bottom: 2em;
+    padding-left: 0;
+    clear:both;
 }
 
 .resume ul li {
-    margin-bottom: 0.25em;
+    margin: 0;
 }
 
 
@@ -560,6 +576,7 @@ footer a
 }
 
 #masthead h1 {
+    float: left;
     padding: 30px 0 0;
     margin: 0;
 }
@@ -675,6 +692,30 @@ footer a
     font-family: Metrophobic;
 }
 
+#contact-form {
+    background: #fff;
+    margin-top: 20px;
+}
+
+.email input[type="text"], .email textarea {
+    display: block;
+    margin: 20px 10px;
+    padding-left: 10px;
+    border-color: #999;
+    border-width: 1px;
+    border-style: solid;
+    color: #333;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    height: 25px;
+}
+
+.email textarea {
+    height: 50px;
+}
+
 /* header H1 segments */
 .name {
     font-size: 34px;
@@ -758,6 +799,10 @@ h2 { font-size: 20px;}
 .resume h2 {
     font-family: Arimo;
     color: #eee;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 0;
+    float: left;
+    clear: both;
 }
 
 /*
@@ -776,8 +821,8 @@ p, p a { font-size: 14px;}
     margin-top: 0;
 }
 
-::-webkit-input-placeholder  { color:#333; }
-input:-moz-placeholder { color:#333; }
+::-webkit-input-placeholder  { color:#333;  font-weight: bold;}
+input:-moz-placeholder { color:#333; font-weight: bold; }
 
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.

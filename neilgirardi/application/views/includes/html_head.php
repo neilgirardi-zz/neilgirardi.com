@@ -16,5 +16,7 @@
 
 <link rel="stylesheet" href="{$cdn}/css/styles.css" />
 <link rel="stylesheet" href="{$cdn}/css/jquery-ui.css" />
+<link rel="icon" href="{$cdn}/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="{$cdn}/favicon.ico" type="image/x-icon" /> 
 </head>
 <body>

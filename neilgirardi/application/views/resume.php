@@ -3,23 +3,47 @@
         <div class="grid-12">
             <h2>Education:</h2>
             <h3><a href="http://www.syr.edu/">Syracuse University</a> &ndash; SI Newhouse School of Public Communications</h3> 
-            <h4 style="margin-top: 0.5em;">Class of 1996</h4>
-            <ul>
-                <li>Bachelor of Science degree:&nbsp;&nbsp;Electronic Media Production</li>
-                <li>Maxwell Scholarship</li>
-            </ul>
+            <h4>1996    Bachelor of Science: Electronic Media Production</h4>
     
-            <h2>Web Development Skills:</h2>
+            <h2> Object Oriented Programming:</h2>
             <ul>
-                <li>Pixel-perfect cross-browser HTML5 / CSS3</li>
-                <li>JavaScript &amp;  jQuery</li>
-                <li>Ajax</li>
-                <li>Object-Oriented PHP</li>
-                <li>Android</li>
-                <li>Java</li>
-                <li>WordPress</li>
+                <li>PHP 5</li>
+                <li>Java (J2EE)</li>
+                <li>Android</li>              
             </ul>
-    
+            
+            <h2>Front-End Technologies:</h2> 
+            <ul>
+                <li>Ajax</li>   
+                <li>Amazon Web Services</li>
+                <li>CSS3</li>        
+                <li>JavaScript </li>
+                <li>jQuery</li>              
+                <li>HTML5</li>
+            </ul>
+            
+            <h2>Principles &amp; Methodologies</h2>
+            <ul>
+                <li>Agile</li>
+                <li>DRY</li>
+                <li>MVC</li>
+                <li>Test Driven Development</li>    <!-- praftices & technologies: JUnit, Mockito, Robo-Guice -->
+            </ul>
+            
+            <h2>Tools</h2>
+            <ul>
+                <!-- <li>Apache: Ant, Ivy, HTTPD</li> -->
+                <li>Version Control: Subversion, GitHub</li>
+                <li>IDEs: IntelliJ, Eclipse, Aptana</li>
+                <!-- <li>Continuous Integration: Jenkins, Cruise Control</li> -->
+            </ul>
+            <!--
+            <h2>Frameworks</h2>
+            <ul>
+                <li>Code Igniter</li>
+                <li>Zend</li>
+            </ul>
+            -->
             <h2>Employment:</h2>
             <span class="date-range">October 2011 - present</span>
             <h3><a target="-blank" href="http://www.grubhub.com">GrubHub</a></h3>
@@ -35,15 +59,15 @@
             <ul>
                 <li>Front-end development and PHP programming for <a target="-blank" href="allmenus.com">allmenus.com</a> &amp; <a target="-blank" href="campusfood.com">campusfood.com.</a></li>
                 <li>Reduced average page load times for allmenus.com by a <strong>factor of 4</strong>.</li>
-                <li>Replaced the aging "Web 1.0" user interface of allmenus.com with a new modern Ajax UI.</li>
+                <li>Lead front-end devloper for recently redesigned user interface of allmenus.com .</li>
             </ul>
     
             <span class="date-range">2011</span>
             <h3><a href="http://groupcommerce.com/">Group Commerce</a></h3>
             <h4>Web Developer </h4>   
             <ul>
-                <li>Completed the front-end development for Parents Magazine's <a href="http://deals.parents.com/national" target="-blank">deal buying site</a>.</li>
-                <li>Overhauled the UI for Group Commerce&rsquo;s deal publishing CMS.</li>
+                <li>Front -end developer for Parents Magazine's <a href="http://deals.parents.com/national" target="-blank">deal buying site</a>.</li>
+                <li>Lead front-end devloper for recently redesigned user interface oof Group Commerce&rsquo;s content management system.</li>
             </ul>
     
             <span class="date-range">2010</span>

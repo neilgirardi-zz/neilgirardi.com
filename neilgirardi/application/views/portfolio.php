@@ -11,10 +11,10 @@
           
         <!--// parents //-->      
         <div class="row">
-            <a class="portfolio-link grid-6" href="http://deals.parents.com/national"title="Click here to see the website"><img src="{$cdn}/images/parents-460.png" width="460" height="460" /></a>
+            <a class="portfolio-link grid-6" href="http://parents.com"title="Click here to see the website"><img src="{$cdn}/images/parents-460.png" width="460" height="460" /></a>
             <div class="grid-6 column wrapper" title="Click here to see the website">
             <h2 class="grid-6 nudge-top">Deals.Parents.com</h2>
-            <p class="grid-6">I did the front-end development for <a class="portfolio-link parents-highlight" href="http://deals.parents.com/national">Deals.Parents.com</a> in 2010 while working with Group Commerce.  <a class="portfolio-link" href="http://groupcommerce.com">Group Commerce</a> is an e-commerce company which provides white-label group deal-buying solutions to publishers. This particular e-commerce site was commissioned by <a class="portfolio-link" href="http://parentsmagazine.com">Parents Magazine</a>.</p> 
+            <p class="grid-6">I did the front-end development for <a class="portfolio-link parents-highlight" href="http://parents.com">Deals.Parents.com</a> in 2010 while working with Group Commerce.  <a class="portfolio-link" href="http://groupcommerce.com">Group Commerce</a> is an e-commerce company which provides white-label group deal-buying solutions to publishers. This particular e-commerce site was commissioned by <a class="portfolio-link" href="http://parentsmagazine.com">Parents Magazine</a>.</p> 
             </div>
         </div>
         <!--// //-->
