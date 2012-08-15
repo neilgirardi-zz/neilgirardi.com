@@ -2,26 +2,53 @@
     <div class="column">
         <div class="grid-12">
             <h2>Education</h2>
-            <h3 class="clear"><a href="http://www.syr.edu/">Syracuse University &ndash; SI Newhouse School of Public Communications</a></h3> 
-            <ul class="resume_education">
+            <h3 class="resume-heading"><a href="http://www.syr.edu/">Syracuse University &ndash; SI Newhouse School of Public Communications</a></h3> 
+            
+            <ul class="bulleted">
                 <li>1996&nbsp;&nbsp;&nbsp;&nbsp;Bachelor of Science:&nbsp;&nbsp;Electronic Media Production</li>
                 <li>1992&nbsp;&nbsp;&nbsp;&nbsp;Maxwell School of Citizenship Conference Scholarship</li>
             </ul>
     
-            <h2>Object-Oriented Programming</h2>
-            <h3 class="resume-items">Android, Java, MySQL, PHP 5</h3>
+            <h2>Back-End Technologies</h2>
+            <ul class="bulleted">
+                <li>Android</li>
+                <li>Java</li>
+                <li>MySQL</li>
+                <li>PHP 5</li>
+            </ul>
             
             <h2>Front-End Technologies</h2>
-            <h3 class="resume-items">Ajax, Amazon Web Services, CSS, JavaScript, jQuery, HTML, Prototype, Scriptaculous</h3>
+            <ul class="bulleted">
+                <li>Ajax</li>
+                <li>Amazon Web Services</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>HTML</li>
+                <li>Prototype</li>
+                <li>Scriptaculous</li>
+            </ul>
             
             <h2>Development Tools</h2>
-            <h3 class="resume-items">Ant (build system), Ivy (dependency injector), Jenkins (continuous integration), Cruise Control  (continuous integration).</h3>
+            <ul class="bulleted">
+                <li>Ant (build system)</li>
+                <li>Ivy (dependency injector)</li>
+                <li>Jenkins (continuous integration)</li>
+                <li>Cruise Control  (continuous integration)</li>
+            </ul>
             
             <h2>Version Control Systems</h2>
-            <h3 class="resume-items">Git, Subversion.</h3>
+            <ul class="bulleted">
+                <li>Git</li>
+                <li>Subversion</li>
+            </ul>
             
             <h2>Agile Project Management Applications</h2>
-            <h3 class="resume-items">Jira, Pivotal Tracker, Redmine.</h3>
+                <ul class="bulleted">
+                    <li>Jira</li>
+                    <li>Pivotal Tracker</li>
+                    <li>Redmine</li>
+                </ul>
     
             <h2>Employment</h2>
             <span class="date-range">April 2011 - August 2012</span>
@@ -32,7 +59,7 @@
                 <li>Developed the following Android applications:</li>
                 <li>
                     <ul>
-                        <li>HelpUDeliver – a prototype app for drivers to manage their deliveries.</li>
+                        <li class="resume-app-heading"><strong>HelpUDeliver</strong> – a prototype app for drivers to manage their deliveries.</li>
                         <li class="resume-features-heading">Features:</li>
                         <li class="resume-features-item">Allows drivers to plan and map their trips using the Google Maps API.</li>
                         <li class="resume-features-item">Simplifies diner communication using one-touch automated phone calls and SMS messages.</li>
@@ -41,7 +68,7 @@
                 </li>
                 <li>
                     <ul>
-                        <li>OrderHub - a tablet-based POS for GrubHub restaurants.</li>
+                        <li class="resume-app-heading"><strong>OrderHub</strong> - a tablet-based POS for GrubHub restaurants.</li>
                         <li class="resume-features-heading">Features:</li>
                         <li class="resume-features-item">Integrates with DeliveryHub (see below) to allow restaurants to assign GrubHub delivery orders to drivers.</li>
                         <li class="resume-features-item">Sends automatic notifications to diners when their food is on the way.</li>
@@ -50,7 +77,7 @@
                 </li>
                 <li>
                     <ul>
-                        <li>OrderHub - a tablet-based POS for GrubHub restaurants.</li>
+                        <li class="resume-app-heading"><strong>OrderHub</strong> - a tablet-based POS for GrubHub restaurants.</li>
                         <li class="resume-features-heading">Features:</li>
                         <li class="resume-features-item">Integrates with DeliveryHub (see below) to allow restaurants to assign GrubHub delivery orders to drivers.</li>
                         <li class="resume-features-item">Sends automatic notifications to diners when their food is on the way.</li>
@@ -59,7 +86,7 @@
                 </li>
                  <li>
                     <ul>
-                        <li>DeliveryHub - a delivery driver app which is fully integrated with OrderHub.</li>
+                        <li class="resume-app-heading"><strong>DeliveryHub</strong> - a delivery driver app which is fully integrated with OrderHub.</li>
                         <li class="resume-features-heading">Features:</li>
                         <li class="resume-features-item">Integrates with OrderHub to Automatically send delivery information to the drivers.</li>
                         <li class="resume-features-item">Integrates with OrderHub to allow drivers to send order status updates back to the restaurant manager.</li>
