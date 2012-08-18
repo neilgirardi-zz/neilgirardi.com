@@ -9,22 +9,23 @@ class Contact extends CI_Controller
     {
         parent::__construct();
         
-        $this->seo = new Seo;
-        $this->seo->title = "Neil Girardi's Web Portfolio";
-        $this->seo->description = 'Neil Girardi is a software engineer in New York City who specializes in object-oriented web programming, pixel-perfect front-end development, Ajax, and Android applications.';
-        $this->seo->author = 'Neil Girardi';
+        $this->meta_tag = new Meta_tag;
+        $this->meta_tag->title = "Neil Girardi's Web Portfolio";
+        $this->meta_tag->description = 'Neil Girardi is a software engineer in New York City who specializes in object-oriented web programming, pixel-perfect front-end development, Ajax, and Android applications.';
+        $this->meta_tag->author = 'Neil Girardi';
+        $this->meta_tag->page = 'contact';
    
         $this->cdn = $this->config->item('cdn');
     }
     
     function Index()
     {
-        $this->parser->parse('includes/html_head', array('cdn'=>$this->cdn, 'seo'=>$this->seo));
-        $this->parser->parse('includes/nav');
-        $this->parser->parse('contact', array('cdn'=>$this->cdn));
-        $this->parser->parse( 'includes/footer');
-        $this->parser->parse( 'includes/header');
-        $this->parser->parse('includes/end_of_page', array('cdn'=>$this->cdn));
+        $this->parser->parse('includes/html_head', $this->meta_tag);
+        $this->load->view('includes/nav');
+        $this->load->view('contact');
+        $this->load->view( 'includes/footer');
+        $this->load->view( 'includes/header');
+        $this->load->view('includes/end_of_page');
     }
     
     

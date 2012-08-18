@@ -19,4 +19,4 @@
 <link rel="icon" href="<?php echo CDN; ?>/favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="<?php echo CDN; ?>/favicon.ico" type="image/x-icon" /> 
 </head>
-<body>
+<body class="{page}">

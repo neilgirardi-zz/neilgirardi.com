@@ -489,106 +489,46 @@ footer a
 /* ======================================
    Resume Tags
    ===================================== */
- 
-  .resume a:link, .resume a:visited {
-    color: /*#4AED05;*/ /*#09B1ED;*/ #fff;
-    text-decoration: underline;
-}
+  .resume-list {
+      padding: 0;
+      margin-top: 0;
+      list-style-type: none;
+      clear: both;
+      font-size: 14px;
+  }
   
-.resume a:hover {
-    text-decoration: underline;
-}
-
-.resume h3 {
-    clear: both;
-    font-size: 13px;
-    margin-top: 0.25em;
-    margin-bottom: 0.5em;
-}
-
-.resume h3.resume-heading {
-    float: left;
-    margin-top: 1em;
-    clear: both;
-}
-
-.resume h3.resume-items {
-    font-weight: normal;
-    font-size: 13px;
-    margin: 0;
-}
-
-.resume h3.company-name {
-    clear: none;
-}
-
-.resume h2 {
-    margin-top: 0.725em;
-    margin-bottom: 0.725em;
-}
-
-.resume .date-range {
-    float: left;
-    clear: both;
-    margin-right: 10px;
-}
-
-.resume .date-range+h3 {
-    float: left;
-    margin-top: -0.12em;
-}
-
-.resume .date-range+h3+h4{
-    float: left;
-    margin-top: 0;
-    margin-bottom: 0.25em;
-    margin-left: 10px;
-}
-
-
-.resume ul {
-    float: left;
-    clear: both;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-.resume ul.bulleted {
-    list-style-type: disc;
-    list-style-position: inside;
-    margin-top: 0.5em;
-    margin-left: 0.5em;
-}
-
-.resume ul li {
-    margin-bottom: 0.5em;
-    clear: both;
-}
-
-.resume ul li.resume-features-heading {
-    list-style-type: none;
-    margin-top: 1em;
-}
-
-.resume ul li.resume-features-item {
-    list-style-position: inside;
-    margin-left: 7px;
-}
-
-.resume ul li ul {
-    margin-top: 1em;
-    margin-left: 1em;
-}
-
-.resume ul li ul li {
-    list-style-type: disc;
-}
-
-.resume ul li ul li.resume-app-heading {
-    list-style-type: none;
-}
-
+  .resume-list li {
+      margin-bottom: 5px;
+  }
+  
+ a.job-name:link, a.job-name:visited {
+      color: #fff;
+      text-decoration: underline;
+  }
+  
+  .resume a.job-name:link, .resume a.job-name:visited {
+      color: #222;
+  }
+  
+  .date-range {
+      float: right;
+      font-weight: bold;
+  }
+  
+  .job-details {
+      float: left;
+      margin-top: 10px;
+      list-style-type: disc;
+      list-style-position: inside;
+  }
+  
+  
+  .resume-list li ul {
+      margin-left: 10px;
+      padding: 0;
+      list-style-type: circle;
+  }
+  
 
 
 /* ==|=== Design Specific Styles ========================================================================
@@ -764,11 +704,12 @@ input[type="text"] {
 
 .title {
     display: block;
-    /*padding-top: 14px;*/
     color: #eee;
     font-weight: normal;
     font-size: 20px;
 }
+
+.resume .title { color: #222;}
 
 .skill-list {
     display: none;
@@ -819,11 +760,15 @@ input[type="text"] {
 /* ======================================
   Design Specific Tags
  ======================================*/
-body {
+body.portfolio, body.contact {
     background: #202020;
 }
 
-body, button, input, select, textarea { font-family: sans-serif; color: #fff; }
+body.portfolio, body.contact button, input, select, textarea { font-family: sans-serif; color: #fff; }
+
+body.resume {font-family: arial; color: #222; background: #fff;}
+
+body.resume h2 {color: #222;}
 
 a:link, a:visited{ color: #2db4ff; }
 
@@ -837,12 +782,18 @@ h2 { font-size: 20px;}
     color: #2db4ff;
 }
 
-.resume h2 {
+.resume-list h2 {
     font-family: Arimo;
     color: #eee;
     margin: 1em 0 0;
+}
+
+.comma {
     float: left;
-    clear: both;
+}
+
+.resume-list h4 {
+    float: left;
 }
 
 /*
