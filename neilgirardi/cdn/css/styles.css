@@ -693,13 +693,25 @@ footer a
 
 .email input[type="text"], .email textarea {
     display: block;
-    margin: 20px 10px;
+    margin: 0 10px 20px;
     padding-left: 10px;
     border-color: #999;
     border-width: 1px;
     border-style: solid;
     color: #333;
     font-weight: bold;
+}
+
+.email label {
+    display: block;
+    margin-left: 10px;
+    margin-bottom: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.email label.error {
+    color: #FF3333;
 }
 
 .email input[type="submit"] {
