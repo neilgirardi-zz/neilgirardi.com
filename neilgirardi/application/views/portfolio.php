@@ -2,8 +2,8 @@
     
     <div class="row">
         <h2>Welcome</h2>
-        <p class="grid-6">Hi I'm Neil Girardi. I'm a software engineer who developes websites and mobile apps. The slideshow below features a sampling of selected works. Simply hover over any slide to pause it. Click on any slide to see the live site.</p>
-        <p class="grid-6">I love what I do and enjoy working with like-minded professionals. Feel free to email me here.<br /><br />Enjoy the site.<br />&nbsp; &nbsp;&mdash;&nbsp;&nbsp;Neil
+        <p class="grid-6">Hi I'm Neil Girardi. I develop websites and mobile apps in New York City. The slideshow below features some of the projects I've worked on. Simply hover over any slide to pause it. Click on any slide to see the live site.</p>
+        <p class="grid-6">I love what I do and enjoy working with like-minded developers. Feel free to email me <a href="contact">here.</a><br /><br />Enjoy the site.<br />&nbsp; &nbsp;&mdash;&nbsp;&nbsp;Neil
             </p>
     </div>
      
@@ -35,7 +35,7 @@
             <a class="grid-6 portfolio-link" href="http://helpudeliver.com"title="Click here to see the website"><img src="<?php echo CDN; ?>/images/helpudeliver-460.png" width="460" height="460" /></a>
             <div class="grid-6 column wrapper" title="Click here to see the website">
             <h2 class="grid-6 nudge-top">HelpUDeliver</h2>
-            <p class="grid-6">Lorem ipsum amet dolor. <a href="http://helpudeliver.com/">HelpUDeliver</a> lorem ipsum amet dolar.</p>
+            <p class="grid-6"><a href="http://helpudeliver.com/">HelpUDeliver</a> is an an Android app for restaurant delivery drivers. Features include optimized route planning for delivery trips, maps for delivery destinations, automated one-touch communication with customers via SMS or "robo-calls" using the Twilio API, as well as tip tracking.</p>
             </div>
         </div>
         <!--// //-->

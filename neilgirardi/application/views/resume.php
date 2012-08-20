@@ -26,7 +26,7 @@
             </ul>
             
             <ul class="resume-list">
-                <li class="pull-left">Implementation Engineer, <a class="job-name" target="-blank" href="http://www.grubhub.com">Group Commerce</a></li>
+                <li class="pull-left">Implementation Engineer, <a class="job-name" target="-blank" href="http://www.groupcommerce.com">Group Commerce</a></li>
                 <li class="date-range">January 2011 - April 2011</li>
             </ul>
             
@@ -38,7 +38,7 @@
             </ul>
             
             <ul class="resume-list">
-                <li class="pull-left">Web Developer, <a class="job-name" target="-blank" href="http://www.grubhub.com">Millennium Promise</a></li>
+                <li class="pull-left">Web Developer, <a class="job-name" target="-blank" href="http://www.millenniumpromise.org">Millennium Promise</a></li>
                 <li class="date-range">June 2010 - December 2011</li>
             </ul>
             
@@ -64,7 +64,7 @@
             </ul>
             
             <ul class="resume-list">
-                <li class="pull-left">Account Manager, <a class="job-name" target="-blank" href="http://www.grubhub.com">PostWorks</a></li>
+                <li class="pull-left">Account Manager, <a class="job-name" target="-blank" href="http://pwny.slatemediagroup.com/">PostWorks</a></li>
                 <li class="date-range">August 1999 - January 2008</li>
             </ul>
             
@@ -74,7 +74,7 @@
             </ul>
             
             <ul class="resume-list">
-                <li class="pull-left">Systems Engineer, <a class="job-name" target="-blank" href="http://www.grubhub.com">Digital Editing Solutions</a></li>
+                <li class="pull-left">Systems Engineer, <a class="job-name" href="http://pivotalpost.com/" target="_blank">Digital Editing Solutions</a></li>
                 <li class="date-range">January 1999 - August 1999 </li>
             </ul>
             

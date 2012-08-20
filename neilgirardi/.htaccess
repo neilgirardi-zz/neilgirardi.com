@@ -57,7 +57,7 @@ ExpiresByType application/x-shockwave-flash "access plus 1 years"
     #request to index.php
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(portfolio|recaptchademo|resume|contact)(.*)$ index.php [QSA,L]
+    RewriteRule ^(portfolio|recaptchademo|resume|contact|phpinfo)(.*)$ index.php [QSA,L]
 
 </IfModule>
 

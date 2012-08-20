@@ -4,7 +4,7 @@
             <a href="/">
                 <h1>
                     <span class="questrial name">Neil Girardi</span>
-                    <span class="title arimo">Software Engineer</span>
+                    <span class="title arimo">Developer, Web &amp; Mobile</span>
                 </h1>
             </a>    
         </div>
