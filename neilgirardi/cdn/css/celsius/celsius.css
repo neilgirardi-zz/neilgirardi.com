@@ -1,0 +1,440 @@
+@charset "utf-8";
+
+body{
+	background: #000;
+	padding: 0;
+	margin: 0;
+}
+
+#siteContainer{
+	background: #000;
+	width: 800px;
+	margin: 0 auto;
+	font-family: arial, helvitica, verdana;
+	font-size: 12px;
+	color: #fff;
+	overflow: auto;
+}
+
+/*
+#logo{
+	width: 469px;
+	height: 57px;
+	margin: 20px auto 0;
+}
+*/
+
+li, ul li{
+list-style-type: none;
+}
+
+li.error{
+	font: bold 14px arial;
+	margin: 0 0 4px 0;
+}
+
+#emailErrors ul{
+	margin-bottom:0;
+}
+
+#emailErrors ul li{
+	list-style-type:disc;
+}
+
+#nav{
+	height:27px;
+	width: 480px;
+	margin: 0 auto 10px;
+	background: url(../graphics/celsius_nav.png) no-repeat 0 0;
+}
+
+ul#navList{
+	margin: 0 0 0 76px;
+}
+
+ul#navList li{
+	float: left;
+	background: url(../graphics/nav_line.png) no-repeat 0 6px;
+}
+
+ul#navList li.last_li{
+	float: left;
+	background: url(../graphics/nav_line.png) no-repeat right 6px; 
+}
+
+ul#navList li a{
+	display: block;
+	text-decoration: none;
+	padding: 6px 0 0 10px;
+	margin-right: 10px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #fff;
+}
+
+ul#navList li a.lastLink{
+	float: left;
+	padding-right: 2px;
+	background: url(../graphics/nav_line.png) no-repeat 0 6px;
+}
+
+a{
+	color: #fff;
+}
+
+ul#navList li a:hover{
+	color: #000;
+}
+
+.usa_only{
+	/*
+	display: block;
+	*/
+	color: #cc3333;
+}
+
+/* link icons */
+
+#emailErrors, #emailListErrors{
+	background: #fff;
+	color: #333;
+	position: absolute;
+	top:150px;
+	left: 460px;
+	padding: 5px 10px;
+	border: 2px solid #fff;
+	z-index:10;
+	-moz-border-radius: 14px;
+	-webkit-border-radius: 14px;
+	behavior: url(PIE/PIE.php);
+}
+
+#emailConf, #mailingListConf{
+	display: none;
+	background: #eee;
+	color: #333;
+	position: absolute;
+	top: 190px;
+	left: 390px;
+	width: 456px;
+	padding: 30px 10px 10px;
+	border: 2px solid #333;
+	-moz-border-radius: 14px;
+	-webkit-border-radius: 14px;
+	border-radius: 14px;
+	behavior: url(PIE/PIE.php);
+	z-index: 100;
+}	
+
+a#closeConf{
+	font: bold 14px verdana;
+	position: absolute;
+	left: 400px;
+	top: 2px;
+	display: block;
+	width: 60px;
+	padding: 5px;
+	background: #cc3333;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+}
+
+a#closeConf.list{
+	left: 190px;
+}
+
+#emailConf p, #listConf p{
+	text-align: center;
+	font: bold 14px verdana;
+}
+
+#emailErrors h2{
+	margin: 5px 0 5px;
+}
+
+h1{
+	text-align: center;
+	margin-top: 15px;
+	color: #fff;
+}
+
+.highlight{
+	color: #cc3333;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+#homePageImages{
+	width: 865px;
+	margin: 5px auto 0 auto;
+}
+
+#playerContainer{
+	margin-top: 20px;
+	position: relative;
+}
+
+.content{
+	width: 800px;
+}
+
+#guestBookImage{
+	float: left;
+	background: url("images/CELSIUS_COMING_SOON_FINALvers5.png") no-repeat;
+}
+
+#homePageAudio{
+	float: left;
+	margin: 0 0 0 200px;
+}
+
+#homePageAudio ul li a{
+	display: block;
+	text-decoration: none;
+	color: #fff;
+}
+
+#homePageAudio ul li a:hover{
+	color: #3399cc;
+}
+
+#footer{
+	padding-top: 15px;
+	clear: both;
+	background: #000;
+}
+
+#footer p{
+	text-align: center;
+	font-weight: normal;
+}
+
+#contactPhoto{
+	float: left;
+	width: 427px;
+	margin: 0 0 0 210px;
+}
+
+/*The following content is for a contact form.*/
+
+#contactForm{
+	float: left;
+	/*
+	width: 480px;
+	*/
+	width: 400px;
+	height: 500px;
+	margin: 30px auto 0;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#2e9be2), to(#1f8fdd));
+	background: -moz-linear-gradient(#2e9be2, #1f8fdd);
+	background: linear-gradient(#2e9be2, #1f8fdd);
+	-pie-background: linear-gradient(#2e9be2, #1f8fdd);
+	-moz-border-radius: 14px;
+	-webkit-border-radius: 14px;
+	beahvior: url("PIE/PIE.php");
+} 
+
+p.formCopy{
+	margin: 20px 0;
+}
+
+
+form.contact{
+	float: left;
+	width: 400px;
+	padding-top: 15px;
+	padding-bottom: 30px;
+	line-height: 125%;
+}
+
+
+form.contact p{
+	color: #333;
+}
+
+#guestBookForm{
+	position: relative;
+	width: 400px;
+	margin: 30px auto 0;
+	float: left;
+}
+
+#mailing_list{
+	width: 400px;
+	margin: 0 auto 30px;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#2e9be2), to(#1f8fdd));
+	background: -moz-linear-gradient(#2e9be2, #1f8fdd);
+	background: linear-gradient(#2e9be2, #1f8fdd);
+	-pie-background: linear-gradient(#2e9be2, #1f8fdd);
+	-moz-border-radius: 14px;
+	-webkit-border-radius: 14px;
+	beahvior: url("PIE/PIE.php");
+}
+
+#guestBookPhoto{
+	display: none;
+	position: absolute;
+	top:135px;
+	left: 760px;
+	width: 249px;
+}
+
+.formH1{
+	color: #fff;
+	font: bold 18px arial;
+	text-align: center;
+	margin: 0 0 20px;
+}
+
+form.contact label{
+	margin: 0 0 0 7px;
+	font: bold 14px verdana;
+	color: #fff;
+}
+
+form.contact label.textInputLabel{
+	margin: 0 0 0 26px;
+}
+
+
+form.contact input{
+	behavior: url(PIE/PIE.php);
+	-moz-border-radius: 14px;
+	-webkit-border-radius: 14px;
+	border: 1px solid #fff;
+	position: relative;
+	top: 6px;
+	display:block;
+	width: 350px;
+	height: 20px;
+	margin: 0 auto 20px;
+	text-indent: 10px;
+}
+
+form.contact textarea{
+	display: block;
+	behavior: url(PIE/PIE.php);
+	-moz-border-radius: 14px;
+	-webkit-border-radius: 14px;
+	position: relative;
+	top: 6px;
+	border: 1px solid #fff;
+	margin: 20px 0 20px 20px;
+	padding: 4px 0 0;
+	width: 430px;
+	height: 56px;
+}
+
+form.contact textarea#email_body{
+	border: 1px solid #fff;
+	margin: 0 auto 20px auto;	
+	width: 350px;
+	height: 110px;
+	overflow: auto;
+	text-indent: 10px;
+}
+
+form.contact .buttonarea{
+	width: 215px;
+	margin: 20px auto 0;
+}
+
+form.contact .buttonarea input{
+	display: block;
+	width: 215px;
+	font-weight: bold;
+	color: #202020;
+	background: #fff;
+}
+
+form.contact .labelAndInput{
+	width: 350px;
+	height: 50px;
+	margin: 20px auto;
+}
+
+form.contact .labelAndInput.country{
+	padding-top: 30px;
+}
+
+form.contact label.error{
+	position: relative;
+	top: -12px;
+	color: #cc3333;
+	font-size: 12px;
+}
+
+.lastLAI{
+	margin-bottom: 20px;
+	padding-top: 30px;
+}
+
+p.error{
+	width: 400px;
+	margin: 20px 0 auto;
+	padding: 20px;
+	text-align: left;
+	font-weight: bold;
+	color: #cc3333;
+	background: #fff;
+}
+
+div#confirmation{
+	height: 450px;
+}
+
+div#confirmation p{
+	width: 400px;
+	margin: 0 auto;
+	padding-top: 20px;
+	text-align: left;
+	font-weight: bold;
+	color: #fff;
+}
+
+div#confirmation p a{
+	margin-left: 4px;
+	color: #0000ff;
+}
+
+.confirmationNumber{
+	margin-left: 4px;
+	font-weight: bold;
+	font-size: 18px;
+	color: #fff;
+}
+
+div#confirmation p.confNumber{
+	color: #0000ff;
+	font-size: 14px;
+}
+
+#formErrorMessages{
+	width: 440px;
+	margin: 30px auto;
+}
+
+.errorH1{
+	margin: 0;
+	padding-top: 50px;
+	text-align: left;
+	color: #cc3333;
+}
+
+.tryAgain{
+	height: 250px;
+	width: 400px;
+	margin: 0 auto;
+	color: #cc3333;
+	font-size: 14px;
+	font-weight: bold;
+}
+	
+.emailThanks{
+	width: 400px;
+	padding: 10px;
+	margin: 0 auto;
+	background: blue;
+	font-size: 14px;
+}	

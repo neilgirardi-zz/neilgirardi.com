@@ -1,0 +1,444 @@
+#searchBoxTop{
+	display: none;
+}
+
+input#searchTerm{
+	float: left;
+	display: block;
+	height: 18px;
+	width: 160px;
+	border: 1px solid #545454;
+	background: #f6f6f6;
+	position: relative;
+	-webkit-border-radius: 14px;
+	-moz-border-radius: 14px;
+	behavior: url(PIE/PIE.php);
+	border-radius: 14px;
+	text-indent: 8px;
+}
+
+input#searchButton{
+	display: block;
+	height: 20px;
+	width: 20px;
+	border: none;
+	background: url("../images/mag-glass.png") 0 0 no-repeat;
+	position: relative;
+	left: 20px;
+}
+
+#nav-info{
+color: #f6f6f6;
+}
+
+
+input#nextPageButton {
+    background: url("../images/arrow-f.gif") no-repeat scroll 42px 1px transparent;
+    border: medium none;
+    color: #f6f6f6;
+    display: block;
+    font: bold 14px/16px arial;
+    height: 20px;
+    padding-bottom: 2px;
+    text-align: left;
+    width: 100px;
+}
+
+input#previousPageButton{
+	display: block;
+	width: 55px;
+	height: 20px;
+	background: url(../images/arrow-b.gif) 0 1px no-repeat;
+	text-align: right;
+	border: none;
+	color: #f6f6f6;
+	font: bold 14px/16px arial;
+	padding-botom: 2px;
+	margin-right: 0;
+}
+
+#searchBoxBottom{
+	clear: both;
+}
+
+#videoMetadata{
+	display: none;
+}
+
+span.videoTitle{
+	display: none;
+	font-weight: bold;
+	color: #ff000b;
+	margin-bottom: 15px;
+}
+
+span.statusLoading{
+	display: block;
+	font-weight: bold;
+	color: #ff000b;
+	font-size: 18px;
+	position: relative;
+	top: 40px;
+}
+
+img {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0;
+  vertical-align: top;
+  text-align: left;
+}
+
+div#authStatus{
+	display: none;
+}
+
+a:link {
+  color: #0000cc;
+}
+
+a:active {
+  color: #cc0000;
+}
+
+a:visited {
+  color: #551a8b;
+}
+
+h1 {
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  color: #f6f6f6;
+}
+
+h2 {
+  font-size: large;
+}
+
+h3 {
+  font-size: medium;
+}
+
+h4 {
+  font-size: small;
+}
+
+form {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.25em;
+}
+
+pre, code {
+  color: #007000;
+  font-family: "bogus font here", monospace;
+  font-size: 100%;
+}
+
+pre {
+  border: 1px solid silver;
+  background-color: #f5f5f5;
+  padding: 0.5em;
+  overflow: auto;
+  margin: 2em;
+}
+
+pre ins {
+  color: #cc0000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* forms */
+textarea {
+    width: 600px;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+.submit {
+    border: 1px solid #ddd;
+}
+
+input, select{
+    border: 1px solid #ddd;
+    margin-bottom: 2px;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+/* "Selected" links */
+a.selected, .selected a, .selected {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a.selected:visited, .selected a:visited {
+  color: black;
+}
+
+p.videoDescription {
+  display: none;
+  color: #202020;
+  font: normal 12px/14px arial;
+  margin: 15px 0 0 0;
+  padding: 0;
+}
+
+p.videoCategory {
+  float: left;
+  margin: 0 0 15px 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+p.videoTags {
+   float: left;
+  margin: 0 0 15px 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+p.edit {
+  font-size: small;
+}
+
+.note {
+  padding: 2px;
+  background-color: yellow;
+  color: #000;
+}
+
+#editForm {
+  font-size: small;
+}
+
+table.videoList {
+  width: 100%;
+}
+
+.videoList td {
+  padding: 10px 0px 5px 5px;
+  border-bottom: 1px solid silver;
+}
+
+#titleBar {
+  border: 1px solid silver;
+  background-color: #e5ecf9;
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+#titleText {
+  float: left;
+}
+
+#shadow{
+	display:none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;	
+	background: url("../images/shade1x1.png") 0 0 repeat;
+}
+
+/*	PROGRESS BAR	*/
+.progressBar{
+	width:200px;
+	height:25px;
+	background:url(../images/bar.gif) no-repeat 0 0;
+	position:relative;
+	border: 1px solid #999;
+}
+
+.progress{
+	color: #FF000B;
+	font: bold 16px/18px arial;
+	position:relative;
+	display: block;
+	margin-bottom: 5px;
+}
+	
+
+.progressBar span{
+	position:absolute;
+	display:block;
+	width:200px;
+	height:25px;
+	background:url(../images/bar.gif) no-repeat 0 0;
+	overflow:hidden;
+	text-indent:-8000px;
+}
+
+.progressBar em{
+	position:absolute;
+	display:block;
+	width:200px;
+	height:25px;
+	background:url(../images/bg_cover.gif) repeat-x 0 0;
+	top:0;
+}
+
+/*	END OF PROGRESS BAR	*/
+
+#searchResultsNavigation{
+	position: absolute;
+	top: -32px;
+	left: 390px;
+}
+
+.videoContainer{
+	position: relative;
+	width: 270px;
+	height: 270px;
+	float: left;
+	margin: 20px 20px 0 0;
+	background: #eee;
+	padding: 15px;
+	-webkit-border-radius: 14px;
+	-moz-border-radius: 14px;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#4cb2f8), to(#2291de));
+	background: -moz-linear-gradient(#4cb2f8, #2291de);
+	background: linear-gradient(#4cb2f8, #2291de);
+	-pie-background: linear-gradient(#4cb2f8, #2291de);
+	behavior: url(PIE/PIE.php);
+	border-radius: 14px;
+	overflow: hidden;
+}
+
+.videoContainer a{
+	color: #f6f6f6;
+	display: block;
+	font-weight: bold;
+	font-size: 14px;
+	margin: 0 0 15px 0;
+	text-decoration: none;
+}
+
+a.thumbnailLink{
+	display: block;
+	width: auto;
+	float: left;
+	margin: 0 15px 15px 0;
+}
+
+.videoContainer img{
+	float: left;
+	width: 270px;
+}
+	
+/*
+#searchBox {
+}
+*/
+
+#authStatus {
+  border-bottom: 1px solid #ddd;
+  padding: 2px;
+  margin-bottom: 10px;
+  
+}
+
+#main {
+  margin: 10px;
+}
+
+#mainSessions {
+  background-color: #ddd;
+  padding: 10px;
+}
+
+#searchResults {
+  width: 100%;
+}
+
+#videoGallery{
+	position: relative;
+	top: 10px;
+	overflow: auto;
+}
+
+#searchResultsListColumn {
+  width: 100%;
+  margin: 10px 0 20px;
+  padding: 0;
+  position: relative;
+}
+
+#searchResultsVideoList{
+width: 100%;
+}
+
+#searchResultsVideoColumn {
+  width: 100%;
+  position: absolute;
+  background: #fff;
+  top: 0;
+  left: 0;
+}
+
+
+.contentVideoApp{
+	float: left;
+	width: 960px;
+	/*
+	height: 1160px;
+	*/
+	margin: 30px 0 30px 15px;
+}
+
+
+#videoPlayer{
+	width: 425px;
+	position: absolute;
+	left:100px;
+	z-index: 11;
+}
+
+a#closeVideo{
+	color: #fff;
+	font-weight: bold;
+	position: absolute;
+	top: 35px;
+	left: 445px;
+	z-index: 11;
+}
+
+#sessionVariable {
+  font-family: Courier, monospace;
+  background-color: #fff;
+  padding: 10px;
+  width: 80%;
+  overflow: scroll;
+}
+
+.thumbnail {
+  padding: 0px 0px 0px 2px;
+}
+
+#imageLoadThumbnail {
+  padding: 4px;
+  background-color: #333;
+}

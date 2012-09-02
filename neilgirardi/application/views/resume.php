@@ -1,6 +1,7 @@
 <div id="site-container" class="resume-list full-grid-width centered overflow">
     <div class="column">
         <div class="grid-10">
+            <a id="download-resume" href="resume/download"><img src="<?php echo CDN; ?>/images/PDF-small.png" alt="download resume" width="48" height="48" /></a>
             <h2>Overview</h2>           
             <p>Experienced and passionate developer skilled in front-end and back-end of web and android technologies. </p>  
 

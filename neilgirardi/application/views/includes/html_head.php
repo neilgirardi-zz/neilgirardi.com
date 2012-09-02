@@ -1,3 +1,4 @@
+<?php header('Content-Type: text/html; charset=UTF-8'); ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
@@ -18,5 +19,6 @@
 <link rel="stylesheet" href="<?php echo CDN; ?>/css/jquery-ui.css" />
 <link rel="icon" href="<?php echo CDN; ?>/favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="<?php echo CDN; ?>/favicon.ico" type="image/x-icon" /> 
+<link rel="dns-prefetch" href="//ajax.googleapis.com">
 </head>
 <body class="{page}">

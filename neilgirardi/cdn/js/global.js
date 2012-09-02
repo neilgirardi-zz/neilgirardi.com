@@ -71,8 +71,6 @@
 
 $(function() {
     
-    toggleGrid();
-    
     linkIndicator();
     
     alignPortfolioText();
@@ -126,7 +124,14 @@ $(function() {
             top: -180, 
             left: -260 
     }); 
-    
-    
+   
+   /* 
+    $('form.email').submit(function(event) {
+        event.preventDefault();
+        $.post('/index.php/contact', function(data) {
+            $('#contact-container').html(data);
+        });
+    });
+    */ 
     
 });

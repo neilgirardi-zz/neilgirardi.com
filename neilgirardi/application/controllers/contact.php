@@ -22,8 +22,8 @@ class Contact extends CI_Controller
         $this->load->library(array('email', 'form_validation'));
         
         $this->meta_tag = new Meta_tag;
-        $this->meta_tag->title = "Neil Girardi's Web Portfolio";
-        $this->meta_tag->description = 'Neil Girardi is a software engineer in New York City who specializes in object-oriented web programming, pixel-perfect front-end development, Ajax, and Android applications.';
+        $this->meta_tag->title = "Contact Neil Girardi's";
+        $this->meta_tag->description = 'Contact Neil Girardi for web and android development.';
         $this->meta_tag->author = 'Neil Girardi';
         $this->meta_tag->page = 'contact';
     }
@@ -98,17 +98,8 @@ class Contact extends CI_Controller
             $this->load->view('includes/end_of_page');   
         }
     }
-    
-    
-    /**
-     * @Return void
-     */
-    function show_error()
-    {
-        
-    }
-    
-    
+  
+  
     /**
      * @Return void
      * @Param string $email_address (the message sender's return email address)

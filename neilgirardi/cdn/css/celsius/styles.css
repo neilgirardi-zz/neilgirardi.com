@@ -1,0 +1,160 @@
+@charset "UTF-8";
+html{
+	background: none !important;
+}
+
+body{
+	background: #000;
+}
+
+#siteContainer{
+	width: 960px;
+	margin: 0 auto;
+}
+
+#logo{
+	width: 469px;
+	height: 65px;
+	margin: 40px auto 0;
+	background: url("../../images/celsius/celsius_logo.png") 0 0 no-repeat;
+}
+
+#homeImageContainer{
+	width: 710px;
+	height: 560px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#playerContainer{
+	position: relative;
+	top: 440px;
+	height: 155px;
+	width: 420px;
+	margin: 0 auto;
+}
+
+#homeNav{
+	width: 480px;
+	height: 27px;
+	background: url("../../images/celsius/celsius_nav.png") 0 0 no-repeat;
+	position: absolute;
+	top: 37px;
+	left: 148px;
+	z-index: 3;
+}
+
+#nav{
+	width: 480px;
+	height: 27px;
+	background: url("../images/celsius/celsius_nav.png") 0 0 no-repeat;
+	margin: 0 auto;
+}
+
+#homeNav ul{
+	line-height: 13px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top:7px;
+	left: 80px;
+	z-index: 100;
+}
+
+
+#nav ul{
+	position: relative;
+	top: 5px;
+}
+
+#homeNav.hidden{
+	width: 0;
+	height: 0;
+}
+
+#homeNav.morph{
+	width: 480px;
+	height: 27px;
+}
+
+#homeNav ul li, #nav ul li{
+	float: left;
+	list-style-type: none;
+	/*background: url("../graphics/nav_line.png") no-repeat scroll 0 6px transparent;*/
+	/*margin-left: 10px;*/
+}
+
+#homeNav ul li a, #nav ul li a{
+	color: #fff;
+	display: block;
+	font-weight: bold;
+	font-family: arial;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+#celsiusLayer1{
+	width: 223px;
+	height: 380px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 4;
+}
+
+#celsiusLayer2{
+	width: 520px;
+	height: 334px;
+	position: absolute;
+	top: 24px;
+	left: 157px;
+	z-index: 1;
+}
+
+.jp-interface .twitter-share-button{
+	position: absolute;
+	top: 88px;
+	left: 325px;
+}
+
+#guestBookForm .twitter-share-button{
+	position: absolute;
+	top: 20px;
+	left: 32px;
+}
+
+#contactPageContainer, #mailingListContainer{
+	overflow: auto;
+	width: 720px;
+	height: 800px;
+	margin: 0 auto;
+}
+
+div.twitter{ 
+	margin: auto;
+	width: 250px 
+} 
+#twitter1{ 
+	height: 300px; 
+	float: left;
+	margin: 30px 0 0 50px;
+	/*
+	background: #fff;
+	*/
+	background: #1F8FDD;
+	color: #202020;
+} 
+
+#twitter1 a{
+	color: #1F8FDD !important;
+}
+
+.twitterSearchTitle span{
+	color: #fff;
+}
+
+.twitterSearchContainter{
+	-moz-border-radius: 14px;
+	-webkit-border-radius: 14px;
+	behavior: url(PIE/PIE.php);
+}

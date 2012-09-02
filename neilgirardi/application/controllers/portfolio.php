@@ -11,7 +11,7 @@ class Portfolio extends CI_Controller
         
         $this->meta_tag = new Meta_tag;
         $this->meta_tag->title = "Neil Girardi's Web Portfolio";
-        $this->meta_tag->description = 'Neil Girardi is a software engineer in New York City who specializes in object-oriented web programming, pixel-perfect front-end development, Ajax, and Android applications.';
+        $this->meta_tag->description = "See Neil Girardi's web portfolio.";
         $this->meta_tag->author = 'Neil Girardi';
         $this->meta_tag->page = 'portfolio';
     }

@@ -489,6 +489,13 @@ footer a
 /* ======================================
    Resume Tags
    ===================================== */
+  #download-resume {
+      float: right;
+      display: block;
+      width: 48px;
+      height: 48px;
+  }
+  
   .resume-list {
       padding: 0;
       margin-top: 0;

@@ -11,10 +11,11 @@ class Resume extends CI_Controller
         
         $this->meta_tag = new Meta_tag;
         $this->meta_tag->title = "Neil Girardi's Resume";
-        $this->meta_tag->description = 'Neil Girardi is a software engineer in New York City who specializes in object-oriented web programming, pixel-perfect front-end development, Ajax, and Android applications.';
+        $this->meta_tag->description = "See Neil Girardi's Resume.";
         $this->meta_tag->author = 'Neil Girardi';
         $this->meta_tag->page = 'resume';
-  
+        
+        $this->load->helper('download');
     }
     
     function Index()
@@ -25,6 +26,14 @@ class Resume extends CI_Controller
         $this->load->view( 'includes/footer');
         $this->load->view( 'includes/header');
         $this->load->view('includes/end_of_page');
+    }
+    
+    function download()
+    {
+        $data = file_get_contents("http://d2anjul3ixu9f5.cloudfront.net/resume/neil-girardi-resume-august-2012.pdf"); // Read the file's contents
+        $name = 'Neil-Girardi-Resume.pdf';
+
+        force_download($name, $data);    
     }
     
     
